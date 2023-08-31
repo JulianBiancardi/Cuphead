@@ -1,6 +1,12 @@
 # Cuphead
 
+<p align="center">
+  <img src="CupheadBanner.png" alt="CupheadBanner" width="200"/>
+</p>
+
 Welcome to the Cuphead educational recreation project! This repository is dedicated to our educational initiative where we aim to recreate certain aspects of the game, Cuphead, developed by StudioMDHR. Please note that this project is purely educational and not affiliated with the official Cuphead game or its creators.
+
+
 
 # Assets Attribution
 
