@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: 2a93977b00bfdb24fa40c13f1011e6c9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BackgroundSheet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2060
+        width: 957
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de7ff5f4a0d3d94ab27af61347190b3
+      internalID: 585926566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1837
+        width: 949
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a94dcb1b84f5344b56d5ba08b8fb98
+      internalID: -1287081736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1665
+        width: 936
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e24c3d157971fa48b47674582ea7d95
+      internalID: 2065340898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_3
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1579
+        width: 970
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81ccaf1b7a976346bea02d1b85adb57
+      internalID: -1026232158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_4
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1261
+        width: 998
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aed9d0ff7031954ea26a41a6f7acf37
+      internalID: 1270796923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_5
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1410
+        width: 464
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18f7993d07d46a41a4732761bed2fd1
+      internalID: 1624290250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1540
+        width: 340
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e914573dba63ef54da16e5c5d23d9343
+      internalID: -1964151367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_7
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 165
+        width: 265
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f5f1f86fbe4874c8c85f338ea646df
+      internalID: 1863455036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 773
+        width: 401
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c544bd5913614245924d253fd5fe42d
+      internalID: 569100979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 353
+        width: 1017
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf0f53338886d44ab87c0cbaf3d3641
+      internalID: 1956308487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_10
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 892
+        width: 931
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 221.88829, y: 34.366016}
+        - {x: 213.12761, y: 9.336719}
+        - {x: 216.88219, y: 1.82793}
+        - {x: 209.37303, y: 4.3308597}
+        - {x: 208.1215, y: 46.88066}
+        - {x: 199.36082, y: 72}
+        - {x: 95.48414, y: 72}
+        - {x: 80.46583, y: 61.89824}
+        - {x: 86.72346, y: 45.629196}
+        - {x: 95.48414, y: 26.857225}
+        - {x: 74.2082, y: 59.39531}
+        - {x: -19.656273, y: 30.61162}
+        - {x: -27.16543, y: 9.336719}
+        - {x: -22.159325, y: 0.57646513}
+        - {x: -13.398641, y: -1.9264644}
+        - {x: -8.392536, y: 4.3308597}
+        - {x: -3.386431, y: -3.1779292}
+        - {x: -53.44748, y: 0.57646513}
+        - {x: -132.29364, y: 38.12041}
+        - {x: -183.6062, y: 48.132126}
+        - {x: -188.61232, y: 30.61162}
+        - {x: -187.3608, y: 25.60576}
+        - {x: -306.25577, y: 40.62334}
+        - {x: -425.15076, y: -1.9264644}
+        - {x: -471.45724, y: -25.704296}
+        - {x: -471.45724, y: -69.50556}
+        - {x: -470.20572, y: -72}
+        - {x: 254.42798, y: -72}
+        - {x: 462.18134, y: -69.50556}
+        - {x: 470.94202, y: -64.4997}
+        - {x: 470.94202, y: -29.45869}
+        - {x: 370.81992, y: 29.360155}
+      - - {x: -392.61108, y: -15.692577}
+        - {x: -388.8565, y: -19.446972}
+        - {x: -383.8504, y: -18.195507}
+        - {x: -387.60498, y: -19.446972}
+        - {x: -391.35956, y: -19.446972}
+      - - {x: 370.81992, y: -16.944042}
+        - {x: 372.07144, y: -15.692577}
+        - {x: 374.5745, y: -15.692577}
+        - {x: 373.32297, y: -18.195507}
+        - {x: 372.07144, y: -16.944042}
+      - - {x: 334.52567, y: 26.857225}
+        - {x: 338.28024, y: 28.10869}
+        - {x: 338.28024, y: 31.863085}
+        - {x: 334.52567, y: 33.11455}
+        - {x: 332.0226, y: 30.61162}
+      - - {x: -157.32416, y: 72}
+        - {x: -157.32416, y: 66.9041}
+        - {x: -123.53295, y: 53.137985}
+        - {x: -59.705112, y: 53.137985}
+        - {x: -44.6868, y: 64.40117}
+        - {x: -44.6868, y: 72}
+      - - {x: -249.9371, y: 72}
+        - {x: -249.9371, y: 69.40703}
+        - {x: -231.1642, y: 60.646774}
+        - {x: -194.86995, y: 60.646774}
+        - {x: -172.34247, y: 69.40703}
+        - {x: -172.34247, y: 72}
+      - - {x: 273.20087, y: 64.40117}
+        - {x: 276.95544, y: 65.65263}
+        - {x: 276.95544, y: 69.40703}
+        - {x: 273.20087, y: 70.65849}
+        - {x: 270.6978, y: 68.15556}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b0af06713403d47ba84d238558838f
+      internalID: -188525896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_11
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 755
+        width: 365
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 180.5238, y: -77.84983}
+        - {x: 178.02075, y: -74.095436}
+        - {x: 176.76923, y: -72.84397}
+        - {x: 176.76923, y: -69.08958}
+        - {x: 174.26617, y: -66.58665}
+        - {x: 174.26617, y: -60.329327}
+        - {x: 171.7631, y: -57.826397}
+        - {x: 171.7631, y: -55.323467}
+        - {x: 166.757, y: -50.317608}
+        - {x: 161.7509, y: -49.066143}
+        - {x: 160.49937, y: -50.317608}
+        - {x: 159.24785, y: -49.066143}
+        - {x: 159.24785, y: -47.81468}
+        - {x: 163.00243, y: -42.80882}
+        - {x: 163.00243, y: -40.30589}
+        - {x: 161.7509, y: -39.054424}
+        - {x: 180.5238, y: -39.054424}
+        - {x: 182.5, y: -36.551495}
+        - {x: 182.5, y: -21.533918}
+        - {x: 169.26006, y: -21.533918}
+        - {x: 166.757, y: -20.282454}
+        - {x: 166.757, y: -11.5222}
+        - {x: 160.49937, y: -5.264875}
+        - {x: 146.73259, y: -5.264875}
+        - {x: 144.22954, y: -7.7678046}
+        - {x: 145.48106, y: -10.270735}
+        - {x: 141.72649, y: -16.528059}
+        - {x: 136.72038, y: -16.528059}
+        - {x: 135.46886, y: -15.276593}
+        - {x: 131.71428, y: -15.276593}
+        - {x: 129.21123, y: -14.025128}
+        - {x: 130.46275, y: -11.5222}
+        - {x: 130.46275, y: -6.51634}
+        - {x: 131.71428, y: -5.264875}
+        - {x: 131.71428, y: -2.7619455}
+        - {x: 126.70817, y: 3.4953785}
+        - {x: 115.444435, y: 3.4953785}
+        - {x: 109.186806, y: 0.99244887}
+        - {x: 109.186806, y: -4.0134106}
+        - {x: 110.43833, y: -6.51634}
+        - {x: 107.93528, y: -6.51634}
+        - {x: 106.683754, y: -5.264875}
+        - {x: 96.67154, y: -2.7619455}
+        - {x: 92.91696, y: -0.25901595}
+        - {x: 87.91086, y: 3.4953785}
+        - {x: 89.162384, y: 17.261492}
+        - {x: 84.15628, y: 23.518816}
+        - {x: 81.65323, y: 23.518816}
+        - {x: 80.4017, y: 24.77028}
+        - {x: 74.144066, y: 24.77028}
+        - {x: 67.88644, y: 22.267351}
+        - {x: 67.88644, y: 18.512957}
+        - {x: 65.383385, y: 14.758562}
+        - {x: 64.13186, y: 14.758562}
+        - {x: 64.13186, y: 18.512957}
+        - {x: 66.63491, y: 22.267351}
+        - {x: 66.63491, y: 26.021746}
+        - {x: 61.628807, y: 32.279068}
+        - {x: 60.37728, y: 32.279068}
+        - {x: 57.874226, y: 34.781998}
+        - {x: 52.868122, y: 34.781998}
+        - {x: 51.616596, y: 33.530533}
+        - {x: 45.358967, y: 33.530533}
+        - {x: 50.36507, y: 38.536392}
+        - {x: 50.36507, y: 39.787857}
+        - {x: 51.616596, y: 41.03932}
+        - {x: 64.13186, y: 41.03932}
+        - {x: 66.63491, y: 43.54225}
+        - {x: 66.63491, y: 46.04518}
+        - {x: 69.13796, y: 46.04518}
+        - {x: 74.144066, y: 51.05104}
+        - {x: 74.144066, y: 53.55397}
+        - {x: 75.39559, y: 53.55397}
+        - {x: 77.89864, y: 54.805435}
+        - {x: 77.89864, y: 59.811295}
+        - {x: 76.64712, y: 61.06276}
+        - {x: 76.64712, y: 63.56569}
+        - {x: 77.89864, y: 64.817154}
+        - {x: 77.89864, y: 71.07448}
+        - {x: 72.89254, y: 74.82887}
+        - {x: 59.125755, y: 74.82887}
+        - {x: 55.371174, y: 72.32594}
+        - {x: 51.616596, y: 71.07448}
+        - {x: 50.36507, y: 68.57155}
+        - {x: 45.358967, y: 79.83473}
+        - {x: 40.35286, y: 79.83473}
+        - {x: 39.101334, y: 78.58327}
+        - {x: 39.101334, y: 88.594986}
+        - {x: 37.849808, y: 90}
+        - {x: 12.819283, y: 90}
+        - {x: 10.316231, y: 88.594986}
+        - {x: 10.316231, y: 84.84059}
+        - {x: 11.567757, y: 83.58913}
+        - {x: 9.064704, y: 81.0862}
+        - {x: 9.064704, y: 72.32594}
+        - {x: 11.567757, y: 69.82301}
+        - {x: 11.567757, y: 68.57155}
+        - {x: 7.813178, y: 64.817154}
+        - {x: 7.813178, y: 51.05104}
+        - {x: 9.064704, y: 49.799576}
+        - {x: 9.064704, y: 47.296646}
+        - {x: 9.064704, y: 49.799576}
+        - {x: 4.0585995, y: 53.55397}
+        - {x: 1.5555469, y: 53.55397}
+        - {x: -0.9475056, y: 51.05104}
+        - {x: -0.9475056, y: 42.290787}
+        - {x: -4.702084, y: 46.04518}
+        - {x: -4.702084, y: 47.296646}
+        - {x: -13.462768, y: 56.0569}
+        - {x: -18.468872, y: 57.308365}
+        - {x: -19.7204, y: 58.55983}
+        - {x: -23.474977, y: 58.55983}
+        - {x: -24.726503, y: 57.308365}
+        - {x: -30.984135, y: 57.308365}
+        - {x: -33.487186, y: 54.805435}
+        - {x: -33.487186, y: 53.55397}
+        - {x: -35.99024, y: 51.05104}
+        - {x: -35.99024, y: 48.54811}
+        - {x: -34.738712, y: 47.296646}
+        - {x: -34.738712, y: 39.787857}
+        - {x: -39.74482, y: 38.536392}
+        - {x: -51.008556, y: 29.77614}
+        - {x: -52.260082, y: 27.27321}
+        - {x: -54.763134, y: 26.021746}
+        - {x: -56.01466, y: 27.27321}
+        - {x: -59.769238, y: 27.27321}
+        - {x: -62.27229, y: 24.77028}
+        - {x: -69.78145, y: 23.518816}
+        - {x: -72.2845, y: 26.021746}
+        - {x: -74.78755, y: 26.021746}
+        - {x: -78.54213, y: 29.77614}
+        - {x: -83.54824, y: 31.027605}
+        - {x: -86.05129, y: 28.524675}
+        - {x: -88.554344, y: 28.524675}
+        - {x: -93.56045, y: 24.77028}
+        - {x: -93.56045, y: 18.512957}
+        - {x: -106.07571, y: 16.010027}
+        - {x: -108.57876, y: 18.512957}
+        - {x: -109.830284, y: 18.512957}
+        - {x: -111.08182, y: 17.261492}
+        - {x: -113.58487, y: 19.764421}
+        - {x: -114.836395, y: 19.764421}
+        - {x: -116.08792, y: 18.512957}
+        - {x: -119.8425, y: 18.512957}
+        - {x: -121.094025, y: 17.261492}
+        - {x: -122.34555, y: 18.512957}
+        - {x: -124.8486, y: 18.512957}
+        - {x: -127.351654, y: 16.010027}
+        - {x: -127.351654, y: 12.255632}
+        - {x: -128.60318, y: 11.004168}
+        - {x: -136.11234, y: 9.752703}
+        - {x: -138.61539, y: 12.255632}
+        - {x: -141.11844, y: 12.255632}
+        - {x: -142.36996, y: 11.004168}
+        - {x: -146.12454, y: 11.004168}
+        - {x: -152.38219, y: 8.501238}
+        - {x: -153.63371, y: 5.998308}
+        - {x: -156.13676, y: 5.998308}
+        - {x: -157.38829, y: 4.7468433}
+        - {x: -159.89134, y: 4.7468433}
+        - {x: -164.89745, y: 2.2439137}
+        - {x: -168.65202, y: 2.2439137}
+        - {x: -169.90355, y: 3.4953785}
+        - {x: -174.90965, y: 3.4953785}
+        - {x: -176.16118, y: 2.2439137}
+        - {x: -179.91576, y: 2.2439137}
+        - {x: -182.41881, y: -0.25901595}
+        - {x: -181.16728, y: -2.7619455}
+        - {x: -182.41881, y: -4.0134106}
+        - {x: -182.41881, y: -35.30003}
+        - {x: -181.16728, y: -36.551495}
+        - {x: -177.4127, y: -36.551495}
+        - {x: -176.16118, y: -37.80296}
+        - {x: -168.65202, y: -39.054424}
+        - {x: -166.14897, y: -36.551495}
+        - {x: -166.14897, y: -10.270735}
+        - {x: -164.89745, y: -10.270735}
+        - {x: -163.64592, y: -9.01927}
+        - {x: -159.89134, y: -9.01927}
+        - {x: -158.63982, y: -7.7678046}
+        - {x: -153.63371, y: -7.7678046}
+        - {x: -154.88524, y: -9.01927}
+        - {x: -154.88524, y: -15.276593}
+        - {x: -153.63371, y: -16.528059}
+        - {x: -153.63371, y: -30.29417}
+        - {x: -151.13065, y: -32.7971}
+        - {x: -147.37607, y: -32.7971}
+        - {x: -144.87302, y: -35.30003}
+        - {x: -142.36996, y: -35.30003}
+        - {x: -141.11844, y: -34.048565}
+        - {x: -132.35776, y: -34.048565}
+        - {x: -131.10623, y: -32.7971}
+        - {x: -121.094025, y: -32.7971}
+        - {x: -116.08792, y: -35.30003}
+        - {x: -111.08182, y: -31.545635}
+        - {x: -106.07571, y: -35.30003}
+        - {x: -99.81808, y: -35.30003}
+        - {x: -98.56655, y: -34.048565}
+        - {x: -93.56045, y: -35.30003}
+        - {x: -91.057396, y: -34.048565}
+        - {x: -86.05129, y: -36.551495}
+        - {x: -67.2784, y: -37.80296}
+        - {x: -63.52382, y: -40.30589}
+        - {x: -61.020763, y: -40.30589}
+        - {x: -57.266186, y: -42.80882}
+        - {x: -52.260082, y: -46.563213}
+        - {x: -49.75703, y: -46.563213}
+        - {x: -48.5055, y: -45.31175}
+        - {x: -47.253975, y: -46.563213}
+        - {x: -47.253975, y: -47.81468}
+        - {x: -44.750923, y: -50.317608}
+        - {x: -39.74482, y: -50.317608}
+        - {x: -38.493294, y: -51.569073}
+        - {x: -35.99024, y: -51.569073}
+        - {x: -33.487186, y: -49.066143}
+        - {x: -24.726503, y: -49.066143}
+        - {x: -23.474977, y: -50.317608}
+        - {x: -19.7204, y: -50.317608}
+        - {x: -17.217346, y: -47.81468}
+        - {x: -15.96582, y: -49.066143}
+        - {x: -10.959716, y: -49.066143}
+        - {x: -9.708189, y: -47.81468}
+        - {x: -7.205137, y: -47.81468}
+        - {x: -5.9536104, y: -49.066143}
+        - {x: -3.450558, y: -47.81468}
+        - {x: 1.5555469, y: -47.81468}
+        - {x: 5.3101254, y: -51.569073}
+        - {x: 9.064704, y: -51.569073}
+        - {x: 9.064704, y: -52.820538}
+        - {x: 10.316231, y: -55.323467}
+        - {x: 16.573862, y: -55.323467}
+        - {x: 16.573862, y: -56.574932}
+        - {x: 17.825388, y: -59.07786}
+        - {x: 32.843704, y: -59.07786}
+        - {x: 34.09523, y: -57.826397}
+        - {x: 39.101334, y: -57.826397}
+        - {x: 39.101334, y: -59.07786}
+        - {x: 40.35286, y: -61.58079}
+        - {x: 45.358967, y: -61.58079}
+        - {x: 49.113544, y: -57.826397}
+        - {x: 50.36507, y: -57.826397}
+        - {x: 51.616596, y: -59.07786}
+        - {x: 60.37728, y: -60.329327}
+        - {x: 61.628807, y: -59.07786}
+        - {x: 65.383385, y: -62.832256}
+        - {x: 67.88644, y: -62.832256}
+        - {x: 69.13796, y: -61.58079}
+        - {x: 75.39559, y: -61.58079}
+        - {x: 76.64712, y: -62.832256}
+        - {x: 82.904755, y: -64.08372}
+        - {x: 86.65933, y: -67.83811}
+        - {x: 94.16849, y: -67.83811}
+        - {x: 95.42001, y: -66.58665}
+        - {x: 96.67154, y: -67.83811}
+        - {x: 101.67764, y: -71.59251}
+        - {x: 105.43222, y: -71.59251}
+        - {x: 107.93528, y: -74.095436}
+        - {x: 115.444435, y: -74.095436}
+        - {x: 117.94749, y: -76.598366}
+        - {x: 119.19901, y: -79.101295}
+        - {x: 124.20512, y: -79.101295}
+        - {x: 127.959694, y: -82.85569}
+        - {x: 132.9658, y: -82.85569}
+        - {x: 132.9658, y: -84.107155}
+        - {x: 134.21733, y: -86.610085}
+        - {x: 140.47496, y: -86.610085}
+        - {x: 140.47496, y: -87.86155}
+        - {x: 141.72649, y: -90}
+        - {x: 147.98412, y: -90}
+        - {x: 150.48717, y: -89.113014}
+        - {x: 151.7387, y: -90}
+        - {x: 171.7631, y: -90}
+        - {x: 179.27228, y: -86.610085}
+        - {x: 180.5238, y: -82.85569}
+      - - {x: 134.21733, y: -42.80882}
+        - {x: 131.71428, y: -40.30589}
+        - {x: 129.21123, y: -40.30589}
+        - {x: 126.70817, y: -37.80296}
+        - {x: 122.95359, y: -39.054424}
+        - {x: 124.20512, y: -37.80296}
+        - {x: 124.20512, y: -31.545635}
+        - {x: 125.45664, y: -32.7971}
+        - {x: 132.9658, y: -32.7971}
+        - {x: 135.46886, y: -35.30003}
+        - {x: 136.72038, y: -34.048565}
+        - {x: 135.46886, y: -35.30003}
+        - {x: 137.97191, y: -44.060284}
+        - {x: 136.72038, y: -42.80882}
+      - - {x: 104.180695, y: -30.29417}
+        - {x: 99.17459, y: -22.785383}
+        - {x: 95.42001, y: -21.533918}
+        - {x: 95.42001, y: -20.282454}
+        - {x: 91.665436, y: -16.528059}
+        - {x: 89.162384, y: -16.528059}
+        - {x: 85.40781, y: -14.025128}
+        - {x: 92.91696, y: -19.030989}
+        - {x: 96.67154, y: -19.030989}
+        - {x: 97.923065, y: -20.282454}
+        - {x: 100.42612, y: -20.282454}
+        - {x: 104.180695, y: -22.785383}
+        - {x: 102.92917, y: -26.539778}
+        - {x: 102.92917, y: -31.545635}
+        - {x: 104.180695, y: -31.545635}
+      - - {x: -131.10623, y: -4.0134106}
+        - {x: -128.60318, y: -4.0134106}
+        - {x: -127.351654, y: -2.7619455}
+        - {x: -128.60318, y: -6.51634}
+        - {x: -131.10623, y: -6.51634}
+      - - {x: 59.125755, y: -5.264875}
+        - {x: 59.125755, y: -4.0134106}
+        - {x: 61.628807, y: -5.264875}
+        - {x: 61.628807, y: -6.51634}
+        - {x: 61.628807, y: -5.264875}
+      - - {x: -23.474977, y: 7.249773}
+        - {x: -24.726503, y: 7.249773}
+        - {x: -24.726503, y: 12.255632}
+        - {x: -18.468872, y: 12.255632}
+        - {x: -15.96582, y: 13.507097}
+        - {x: -12.211242, y: 5.998308}
+        - {x: -18.468872, y: 3.4953785}
+        - {x: -18.468872, y: 4.7468433}
+      - - {x: 154.24174, y: 90}
+        - {x: 152.99022, y: 89.84645}
+        - {x: 149.23564, y: 89.84645}
+        - {x: 147.98412, y: 90}
+        - {x: 144.22954, y: 90}
+        - {x: 137.97191, y: 86.09206}
+        - {x: 136.72038, y: 84.84059}
+        - {x: 130.46275, y: 84.84059}
+        - {x: 129.21123, y: 83.58913}
+        - {x: 122.95359, y: 82.33766}
+        - {x: 117.94749, y: 78.58327}
+        - {x: 117.94749, y: 76.08034}
+        - {x: 116.69596, y: 76.08034}
+        - {x: 112.94138, y: 72.32594}
+        - {x: 112.94138, y: 63.56569}
+        - {x: 114.19291, y: 62.314224}
+        - {x: 112.94138, y: 59.811295}
+        - {x: 116.69596, y: 56.0569}
+        - {x: 117.94749, y: 56.0569}
+        - {x: 119.19901, y: 57.308365}
+        - {x: 121.702065, y: 54.805435}
+        - {x: 122.95359, y: 54.805435}
+        - {x: 129.21123, y: 48.54811}
+        - {x: 130.46275, y: 48.54811}
+        - {x: 132.9658, y: 51.05104}
+        - {x: 134.21733, y: 51.05104}
+        - {x: 139.22343, y: 48.54811}
+        - {x: 154.24174, y: 48.54811}
+        - {x: 159.24785, y: 44.793716}
+        - {x: 164.25395, y: 44.793716}
+        - {x: 165.50548, y: 46.04518}
+        - {x: 182.5, y: 46.04518}
+        - {x: 182.5, y: 90}
+      - - {x: -182.41881, y: 78.58327}
+        - {x: -181.16728, y: 77.3318}
+        - {x: -177.4127, y: 78.58327}
+        - {x: -177.4127, y: 82.33766}
+        - {x: -181.16728, y: 83.58913}
+        - {x: -182.41881, y: 82.33766}
+      - - {x: -83.54824, y: 84.84059}
+        - {x: -77.2906, y: 89.84645}
+        - {x: -77.2906, y: 90}
+        - {x: -119.8425, y: 90}
+        - {x: -118.59097, y: 87.34352}
+        - {x: -112.33334, y: 84.84059}
+        - {x: -108.57876, y: 83.58913}
+        - {x: -101.0696, y: 83.58913}
+        - {x: -99.81808, y: 82.33766}
+        - {x: -96.0635, y: 82.33766}
+        - {x: -94.81197, y: 83.58913}
+        - {x: -91.057396, y: 83.58913}
+        - {x: -89.80587, y: 84.84059}
+      - - {x: -156.13676, y: 90}
+        - {x: -154.88524, y: 87.34352}
+        - {x: -149.87912, y: 86.09206}
+        - {x: -147.37607, y: 87.34352}
+        - {x: -139.86691, y: 87.34352}
+        - {x: -137.36386, y: 89.84645}
+        - {x: -137.36386, y: 90}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 23594ea8469ae184fa82f87804d2c765
+      internalID: 287657893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 7
+        width: 139
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604916e3f80f01340a8dd5827dd03e69
+      internalID: -1821010338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_13
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 6
+        width: 124
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf42a7afe215874b8828d5a0e7eda0c
+      internalID: 928909837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_14
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 22
+        width: 221
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc3c5479f5d9cc4cb149fb28cbc8e1a
+      internalID: 907257966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_15
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 42
+        width: 134
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1768d016ac8a694987bc23ae8bc1eb8
+      internalID: -641717477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_16
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 17
+        width: 106
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242c6547b5aa24f4c8e8cd2094d7d1b5
+      internalID: -1139968060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1236
+        width: 400
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb5ed9dc1c350543bfd8d7a67ba87c6
+      internalID: -2024449242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1398
+        width: 288
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe3eae81bcf84846b31c41ae30b251e
+      internalID: -270163847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_19
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 95
+        width: 514
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c044d0e2cd5b864ea1215d8562d5898
+      internalID: -1140705611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 150
+        width: 434
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1da9b3ab8d0cb448f84d09cd873925
+      internalID: 1045911759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2380
+        width: 364
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272f4060f6e612c4dae87d6cacb331db
+      internalID: 668247318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BackgroundSheet_0: 585926566
+      BackgroundSheet_1: -1287081736
+      BackgroundSheet_10: -188525896
+      BackgroundSheet_11: 287657893
+      BackgroundSheet_12: -1821010338
+      BackgroundSheet_13: 928909837
+      BackgroundSheet_14: 907257966
+      BackgroundSheet_15: -641717477
+      BackgroundSheet_16: -1139968060
+      BackgroundSheet_17: -2024449242
+      BackgroundSheet_18: -270163847
+      BackgroundSheet_19: -1140705611
+      BackgroundSheet_2: 2065340898
+      BackgroundSheet_20: 1045911759
+      BackgroundSheet_21: 668247318
+      BackgroundSheet_3: -1026232158
+      BackgroundSheet_4: 1270796923
+      BackgroundSheet_5: 1624290250
+      BackgroundSheet_6: -1964151367
+      BackgroundSheet_7: 1863455036
+      BackgroundSheet_8: 569100979
+      BackgroundSheet_9: 1956308487
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
