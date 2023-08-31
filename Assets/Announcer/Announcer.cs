@@ -22,6 +22,10 @@ public class Announcer : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    public void Ready(){
+        animator.SetTrigger("intro");
+    }
+
     public void playReadySound(){
         //Select one random
         int index = Random.Range(0, readySounds.Length);

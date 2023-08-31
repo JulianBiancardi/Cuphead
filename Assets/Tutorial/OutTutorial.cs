@@ -5,18 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class DoorOutTutorial : MonoBehaviour
 {
-    public string sceneName;
+    private Collider2D collider;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        collider = GetComponent<Collider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.CompareTag("Player")){
-            Debug.Log("PLAYER ENTERED DOOR");
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            LoaderManager loaderManager = GameObject.Find("LoaderManager").GetComponent<LoaderManager>();
+            if(loaderManager){
+                Debug.Log("LOADER MANAGER: " + loaderManager);
+                collider.enabled = false;
+                loaderManager.LoadSceneAsync(LoaderManager.Scene.TheRootPack);
+            }
         }
 
     }

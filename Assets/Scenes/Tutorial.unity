@@ -2555,7 +2555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1030262650
 Transform:
   m_ObjectHideFlags: 0
@@ -2990,7 +2990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1179767656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3076,7 +3076,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179767655}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1179767659
 Camera:
   m_ObjectHideFlags: 0
@@ -4823,6 +4823,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4749983275420712610, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
+      propertyPath: superClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d057ea4f1ddd3bf41ad5e208aeecb23a, type: 3}
+    - target: {fileID: 4749983275420712610, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
+      propertyPath: startShootClip
+      value: 
+      objectReference: {fileID: 8300000, guid: caa3f3bd88ecb60419e059b49152e9db, type: 3}
     - target: {fileID: 4985896551419817893, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5143,7 +5151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1934320905
 MonoBehaviour:
   m_ObjectHideFlags: 0
