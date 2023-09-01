@@ -30,21 +30,15 @@ public class PlayerJumpState : State
 
     public override void UpdateState()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        context.rigidbody2D.velocity = new Vector2(horizontal * speed, context.rigidbody2D.velocity.y);
-        Flip(horizontal);
-
+        if(!context.isDashing){
+            context.rigidbody2D.velocity = new Vector2(context.move * speed, context.rigidbody2D.velocity.y);
+        }
+        
         if(context.isGrounded){
             context.animator.SetBool("isGrounded", true);
             context.rigidbody2D.velocity = new Vector2(0, 0);
             context.ChangeState(context.groundState);
         }
-
-        if(Input.GetKeyDown(KeyCode.Space) && canParry){
-            Parry();
-        } else if(Input.GetKeyDown(KeyCode.LeftShift)){
-            context.Dash();
-        } 
     }
 
     public override void Exit()
@@ -54,18 +48,9 @@ public class PlayerJumpState : State
         context.LandGroundFX();
     }
 
-    void Flip(float horizontal)
-    {
-        if(horizontal > 0){
-            direction = Direction.Right;
-            context.transform.rotation = Quaternion.Euler(0, 0, 0);
-            targetXaxis = 1;
-        } else if(horizontal < 0){
-            direction = Direction.Left;
-            context.transform.rotation = Quaternion.Euler(0, -180, 0);
-            targetXaxis = -1;
-        } else {
-            targetXaxis = 0;
+    public override void OnJump(){
+        if(canParry){
+            Parry();
         }
     }
 
@@ -80,5 +65,8 @@ public class PlayerJumpState : State
             context.rigidbody2D.velocity = new Vector2(context.rigidbody2D.velocity.x, context.jumpForce / 1.2f);
             canParry = true;
         }
+    }
+    public override Quaternion getTargetRotation(){
+        return Quaternion.Euler(0, context.transform.rotation.eulerAngles.y, 0);
     }
 }

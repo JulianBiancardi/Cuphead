@@ -5,13 +5,6 @@ using UnityEngine;
 public class PlayerCrouchState : State
 {
 
-    private enum Direction
-    {
-        Left = -1,
-        Right = 1
-    }
-    private Direction direction = Direction.Right;
-
     public PlayerCrouchState(PlayerStateManager context): base(context){
     }
 
@@ -25,13 +18,7 @@ public class PlayerCrouchState : State
     {
         if(!Input.GetKey(KeyCode.S)){
             context.ChangeState(context.groundState);
-        } else if(Input.GetKeyDown(KeyCode.Space)){
-            OneWayPlatformCheck();
         }
-
-        float horizontal = Input.GetAxis("Horizontal");
-        Flip(horizontal);
-        Shoot();
     }
 
     public override void Exit()
@@ -39,28 +26,18 @@ public class PlayerCrouchState : State
         context.animator.SetBool("isCrouching", false);
     }
 
-    void Flip(float horizontal)
-    {
-        if(horizontal > 0){
-            direction = Direction.Right;
-            context.transform.rotation = Quaternion.Euler(0, 0, 0);
-        } else if(horizontal < 0){
-            direction = Direction.Left;
-            context.transform.rotation = Quaternion.Euler(0, -180, 0);
+    public override void OnJump(){
+        if(OneWayPlatformCheck()){
+            return;
         }
+        context.ChangeState(context.groundState);
     }
 
-    void Shoot(){
-        if(Input.GetKey(KeyCode.E)){
-            context.animator.SetBool("isShooting", true);
-            context.playerWeapon.Shoot(Quaternion.Euler(0, context.transform.rotation.eulerAngles.y, 0));
-        } else if(Input.GetKeyUp(KeyCode.E)){
-            context.animator.SetBool("isShooting", false);
-            context.playerWeapon.StopShooting();
-        }
-    }
 
-    void OneWayPlatformCheck(){
+    public override Quaternion getTargetRotation(){
+        return Quaternion.Euler(0, context.transform.rotation.eulerAngles.y, 0);
+    }
+    bool OneWayPlatformCheck(){
         Vector3 start = context.transform.position;
         Vector3 dir = Vector3.down;
         Debug.DrawRay(start, dir, Color.red, 2f);
@@ -76,7 +53,9 @@ public class PlayerCrouchState : State
                 context.collider2D.enabled = false;
                 //Wait for 0.5 seconds
                 //StartCoroutine(EnableColliderAfter(0.5f));
+                return true;
             }
         }
+        return false;
     }
 }

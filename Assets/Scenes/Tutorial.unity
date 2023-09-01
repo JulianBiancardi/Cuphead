@@ -2686,7 +2686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59aef4007faa2134886004ccd2fc6446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: TheRootPack
 --- !u!61 &1120526015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2990,7 +2989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1179767656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3076,7 +3075,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179767655}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &1179767659
 Camera:
   m_ObjectHideFlags: 0
@@ -3154,6 +3153,7 @@ GameObject:
   - component: {fileID: 1330956139}
   - component: {fileID: 1330956141}
   - component: {fileID: 1330956140}
+  - component: {fileID: 1330956142}
   m_Layer: 3
   m_Name: tutorial_cube_2
   m_TagString: Untagged
@@ -3170,7 +3170,7 @@ Transform:
   m_GameObject: {fileID: 1330956138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.854, y: -0.763, z: -0.03065582}
+  m_LocalPosition: {x: -30.854, y: -0.763, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3206,7 +3206,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: -0.08313179, y: -0.10045114}
   m_SpriteTilingProperty:
@@ -3273,6 +3273,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!251 &1330956142
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330956138}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1477987992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,6 +3303,7 @@ GameObject:
   - component: {fileID: 1477987995}
   - component: {fileID: 1477987994}
   - component: {fileID: 1477987993}
+  - component: {fileID: 1477987996}
   m_Layer: 3
   m_Name: Cube2
   m_TagString: Ground
@@ -3321,7 +3341,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: -0.12422109, y: -0.059028268}
   m_SpriteTilingProperty:
@@ -3404,6 +3424,25 @@ Transform:
   - {fileID: 1722995620}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!251 &1477987996
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477987992}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1494075839
 GameObject:
   m_ObjectHideFlags: 0
@@ -3432,7 +3471,7 @@ Transform:
   m_GameObject: {fileID: 1494075839}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.69353, y: 0.115815766, z: -0.03065582}
+  m_LocalPosition: {x: -32.69353, y: 0.115815766, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4516,6 +4555,7 @@ GameObject:
   - component: {fileID: 1813675079}
   - component: {fileID: 1813675078}
   - component: {fileID: 1813675080}
+  - component: {fileID: 1813675081}
   m_Layer: 3
   m_Name: Cube
   m_TagString: Ground
@@ -4621,7 +4661,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: -0.12422109, y: -0.059028268}
   m_SpriteTilingProperty:
@@ -4636,6 +4676,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9915576, y: 1.4997184}
   m_EdgeRadius: 0
+--- !u!251 &1813675081
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813675076}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1817935851
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,14 +4882,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4749983275420712610, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
-      propertyPath: superClip
-      value: 
-      objectReference: {fileID: 8300000, guid: d057ea4f1ddd3bf41ad5e208aeecb23a, type: 3}
-    - target: {fileID: 4749983275420712610, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
-      propertyPath: startShootClip
-      value: 
-      objectReference: {fileID: 8300000, guid: caa3f3bd88ecb60419e059b49152e9db, type: 3}
     - target: {fileID: 4985896551419817893, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4874,6 +4925,30 @@ PrefabInstance:
     - target: {fileID: 6437662396862363995, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091448071114900229, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
+      propertyPath: m_NotificationBehavior
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091448071114900229, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091448071114900229, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
+      value: e708bb66-5b90-45a5-b590-3e25520270e7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091448071114900229, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_ActionId
+      value: dfd8b989-74d5-4089-8363-b366606da185
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091448071114900229, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
+      value: Player/Jump[/Keyboard/space]
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091448071114900229, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_ActionName
+      value: Player/Dash[/Keyboard/leftShift]
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

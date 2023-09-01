@@ -17,6 +17,10 @@ public class PlayerWeapon : MonoBehaviour
     private float nextFire = 0.0f;
     private AudioSource audioSource;
     private bool initialShoot = true;
+    private int superCount = 0;
+    private int maxSuperCount = 3;
+    private int pointsNeededForSuper = 3;
+    private int points = 0;
 
     void Awake()
     {
@@ -51,6 +55,9 @@ public class PlayerWeapon : MonoBehaviour
     }
 
     public void Super(Quaternion targetRotation){
+        if(superCount <= 0){
+            return;
+        }
         Debug.Log("Super");
         audioSource.PlayOneShot(superClip);
         GameObject bullet = Instantiate(superBulletPrefab, bulletSpawn.position, targetRotation);
@@ -59,4 +66,12 @@ public class PlayerWeapon : MonoBehaviour
         Destroy(bullet, bulletLife);
     }
 
+    public void AddPoint(int amount){
+        Debug.Log("AddPoint");
+        points += amount;
+        superCount = points / pointsNeededForSuper;
+        if(superCount > maxSuperCount){
+            superCount = maxSuperCount;
+        }
+    }
 }

@@ -1,4 +1,4 @@
-
+using UnityEngine;
 public abstract class State
 {
     protected PlayerStateManager context;
@@ -10,4 +10,8 @@ public abstract class State
     public abstract void Enter();
     public abstract void UpdateState();
     public abstract void Exit();
+    public abstract void OnJump();
+
+    public abstract Quaternion getTargetRotation();
+
 }

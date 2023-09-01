@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerStateManager : MonoBehaviour
 {
     public float jumpForce = 20f;
+    public float dashForce = 10f;
 
     public State groundState {get; private set;}
     public State crouchState {get; private set;}
@@ -24,10 +26,13 @@ public class PlayerStateManager : MonoBehaviour
     public GameObject landGroundEffect;
 
     public Collider2D groundCollider;
+    public float move {get; set;}
+    public float targetXaxis {get; set;}
+    public float targetYaxis {get; set;}
     public bool isGrounded {get; set;}
 
     public bool isDashing {get; set;}
-    public int superCount {get; set;}
+    public bool isShooting {get; set;}
     
     public enum Direction
     {
@@ -53,9 +58,12 @@ public class PlayerStateManager : MonoBehaviour
 
     void Start()
     {
+        move = 0;
+        targetXaxis = 0;
+        targetYaxis = 0;
         isGrounded = true;
         isDashing = false;
-        superCount = 3;
+        isShooting = false;
         direction = Direction.Right;
         currentState = groundState; 
         currentState.Enter();   
@@ -64,26 +72,14 @@ public class PlayerStateManager : MonoBehaviour
 
     void Update()
     {
-       currentState.UpdateState();
+        currentState.UpdateState();
+        Shoot();
     }
 
     public void ChangeState(State newState){
         currentState.Exit();
         currentState = newState;
         currentState.Enter();
-    }
-
-    public void Dash(){
-        StartCoroutine(StartDash());
-    }
-
-    public IEnumerator StartDash(){
-        animator.SetTrigger("dash");
-        isDashing = true;
-        rigidbody2D.velocity = new Vector2(10 * (int)direction, rigidbody2D.velocity.y);
-        audioSource.PlayOneShot(dashSound);
-        yield return new WaitForSeconds(0.2f);
-        isDashing = false;
     }
 
     public void FallOneWayPlatform(Collider2D platformCollider){
@@ -112,18 +108,65 @@ public class PlayerStateManager : MonoBehaviour
         effect.GetComponent<ParticleSystem>().Play();
     }
 
-    public void Super(){
-        playerWeapon.Super(getTargetRotation());
+
+    public void OnMove(InputValue value){
+        move = value.Get<Vector2>().x;
+        targetXaxis = value.Get<Vector2>().x;
+        targetYaxis = value.Get<Vector2>().y;
+        animator.SetFloat("speed", Mathf.Abs(move));
+        animator.SetFloat("targetYaxis", targetYaxis);
+        Flip(move);
+    }
+   
+    public void OnJump(){
+        currentState.OnJump();
     }
 
-    private Quaternion getTargetRotation(){
-        if(Input.GetKey(KeyCode.W)){
-            animator.SetFloat("targetYaxis", 1);
-            return Quaternion.Euler(0, transform.rotation.eulerAngles.y, 90);
-        } else {
-            animator.SetFloat("targetYaxis", 0);
-            return Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+    public void OnDash(){
+        StartCoroutine(Dash());
+    }
+
+    public void OnShoot(InputValue value){
+        Debug.Log("SHOOT" + value.isPressed);
+        animator.SetBool("isShooting", value.isPressed);
+        isShooting = value.isPressed;
+    }
+
+    public void Shoot(){
+        if(isShooting && !isDashing){
+            playerWeapon.Shoot(currentState.getTargetRotation());
+        } else{
+            playerWeapon.StopShooting();
         }
     }
 
+    public void OnSuper(){
+        animator.SetTrigger("superAttack");
+    }
+    public void Super(){
+        playerWeapon.Super(currentState.getTargetRotation());
+    }
+
+    public IEnumerator Dash(){
+        animator.SetTrigger("dash");
+        isDashing = true;
+        rigidbody2D.gravityScale = 0;
+        rigidbody2D.velocity = new Vector2(dashForce * (int) direction, 0);
+        audioSource.PlayOneShot(dashSound);
+        yield return new WaitForSeconds(0.2f);
+        isDashing = false;
+        rigidbody2D.gravityScale = 5;
+    }
+
+    void Flip(float horizontal)
+    {
+        if(horizontal > 0){
+            direction = PlayerStateManager.Direction.Right;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        } else if(horizontal < 0){
+            direction = PlayerStateManager.Direction.Left;
+            transform.rotation = Quaternion.Euler(0, -180, 0);
+        } else {
+        }
+    }
 }
