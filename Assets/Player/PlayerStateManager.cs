@@ -15,6 +15,7 @@ public class PlayerStateManager : MonoBehaviour
 
     public Rigidbody2D rigidbody2D {get; private set;}
     public Collider2D collider2D {get; private set;}
+    public PlayerInput playerInput {get; private set;}
     public Animator animator {get; private set;}
     public Transform transform {get; private set;}
     public PlayerWeapon playerWeapon {get; private set;}
@@ -54,6 +55,7 @@ public class PlayerStateManager : MonoBehaviour
         transform = GetComponent<Transform>();
         playerWeapon = GetComponent<PlayerWeapon>();
         audioSource = GetComponent<AudioSource>();
+        playerInput = GetComponent<PlayerInput>();
     }
 
     void Start()
@@ -66,7 +68,8 @@ public class PlayerStateManager : MonoBehaviour
         isShooting = false;
         direction = Direction.Right;
         currentState = groundState; 
-        currentState.Enter();   
+        currentState.Enter(); 
+        playerInput.DeactivateInput();
     }
 
 
@@ -76,6 +79,10 @@ public class PlayerStateManager : MonoBehaviour
         Shoot();
     }
 
+    public void Init(){
+        playerInput.ActivateInput();
+        animator.SetTrigger("intro");
+    }
     public void ChangeState(State newState){
         currentState.Exit();
         currentState = newState;

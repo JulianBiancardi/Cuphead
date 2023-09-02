@@ -34,7 +34,7 @@ public class LoaderManager : MonoBehaviour
 
     void Update() {
         if(Input.GetKeyDown(KeyCode.Space) && currentScene == Scene.Title && !isLoading){
-           LoadSceneAsync(Scene.Tutorial);
+           LoadSceneAsync(Scene.TheRootPack);
         }
     }
 
@@ -82,12 +82,12 @@ public class LoaderManager : MonoBehaviour
 
     IEnumerator FinishLoadingLevel(){
         yield return new WaitForSeconds(5f);
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextScene.ToString()));
         currentScene = nextScene;
         isLoading = false;
         loadingScreen.SetActive(false);
         animator.SetTrigger("intro");
         audioSource.volume = 1f;
-        yield return new WaitForSeconds(5f);
         if(currentScene == Scene.TheRootPack){
             //Find the level manager and init the level
             LevelManager levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();

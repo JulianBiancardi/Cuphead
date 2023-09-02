@@ -16,7 +16,7 @@ public class PlayerCrouchState : State
 
     public override void UpdateState()
     {
-        if(!Input.GetKey(KeyCode.S)){
+        if(context.targetYaxis >= 0){
             context.ChangeState(context.groundState);
         }
     }

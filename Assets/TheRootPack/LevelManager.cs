@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour
 { 
+    public GameObject player;
     public GameObject salSpudder;
     public GameObject ollieBulb;
     public GameObject chaunceyChanteny;
@@ -25,6 +26,7 @@ public class LevelManager : MonoBehaviour
 
 
     public void Init(){
+        player.GetComponent<PlayerStateManager>().Init();
         salSpudder.SetActive(true);
         currentPhase = Phase.SalSpudder;
         Announcer.Instance.Ready();
