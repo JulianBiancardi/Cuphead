@@ -10,7 +10,7 @@ public class LoaderManager : MonoBehaviour
     private Scene nextScene;
     private bool isLoading = false;
     public GameObject loadingScreen;
-    public AudioSource audioSource;
+    public AudioClip titleMusic;
 
     public enum Scene
     {
@@ -30,6 +30,7 @@ public class LoaderManager : MonoBehaviour
     void Start() {
         animator = GetComponent<Animator>();
         animator.SetTrigger("intro");
+        AudioManager.Instance.PlayMusic(titleMusic, true);
     }
 
     void Update() {
@@ -43,7 +44,7 @@ public class LoaderManager : MonoBehaviour
 
     public void LoadSceneAsync(Scene scene){
         animator.SetTrigger("outro");
-        StartCoroutine(FadeOut(audioSource, 0.5f));
+        AudioManager.Instance.FadeOutMusic(0.5f);
         nextScene = scene;
         isLoading = true;
     }
@@ -60,19 +61,6 @@ public class LoaderManager : MonoBehaviour
         StartCoroutine(FinishLoadingLevel());
     }
 
-    IEnumerator FadeOut(AudioSource audioSource, float FadeTime) {
-        float startVolume = audioSource.volume;
- 
-        while (audioSource.volume > 0) {
-            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
- 
-            yield return null;
-        }
- 
-        audioSource.Stop ();
-        audioSource.volume = startVolume;
-    }
-
     public void FinishOutro(){
         scenesLoading.Add(SceneManager.UnloadSceneAsync(currentScene.ToString()));
         loadingScreen.SetActive(true);
@@ -87,7 +75,7 @@ public class LoaderManager : MonoBehaviour
         isLoading = false;
         loadingScreen.SetActive(false);
         animator.SetTrigger("intro");
-        audioSource.volume = 1f;
+        AudioManager.Instance.FadeInMusic(0.5f);
         if(currentScene == Scene.TheRootPack){
             //Find the level manager and init the level
             LevelManager levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();

@@ -53,10 +53,8 @@ public class Health : MonoBehaviour, IObservable{
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("Player hit with" + other.gameObject.tag);
         Enemy enemy = other.gameObject.GetComponent<Enemy>();
         if (enemy != null){
-            Debug.Log("Deal damage");
             takeDamage();
         }
     }

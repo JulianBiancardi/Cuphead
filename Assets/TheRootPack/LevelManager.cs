@@ -49,8 +49,6 @@ public class LevelManager : MonoBehaviour
     }
 
     public void PlayerDeath(){
-        //reset the level
-        //fin loader manager object
         LoaderManager loaderManager = GameObject.Find("LoaderManager").GetComponent<LoaderManager>();
         if(loaderManager != null){
             loaderManager.LoadSceneAsync(LoaderManager.Scene.TheRootPack);
