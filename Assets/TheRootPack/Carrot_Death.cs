@@ -9,9 +9,6 @@ public class Carrot_Death : StateMachineBehaviour
     {
         //Shake the camera
         CameraShake.Instance.ShakeCamera(1f, 0.2f);
-
-        //Play knock out sound
-        Announcer.Instance.knockOut();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

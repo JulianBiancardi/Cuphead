@@ -95,7 +95,6 @@ public class PlayerStateManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("HIT WITH " + other.gameObject.name);
         //if other has layer ground trigger event
         if(other.gameObject.layer == LayerMask.NameToLayer("Ground")){
             Debug.Log("HIT GROUND");
@@ -127,7 +126,6 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void OnShoot(InputValue value){
-        Debug.Log("SHOOT" + value.isPressed);
         animator.SetBool("isShooting", value.isPressed);
         isShooting = value.isPressed;
     }
@@ -141,6 +139,9 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void OnSuper(){
+        if(!playerWeapon.CanEX()){
+            return;
+        }
         animator.SetTrigger("superAttack");
     }
     public void Super(){

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerWeapon : MonoBehaviour
 {
@@ -18,15 +19,24 @@ public class PlayerWeapon : MonoBehaviour
     private AudioSource audioSource;
     private bool initialShoot = true;
     private int superCount = 0;
-    private int maxSuperCount = 3;
-    private int pointsNeededForSuper = 3;
+    private int maxSuperCount = 5;
+    private int pointsNeededForSuper = 50;
     private int points = 0;
+    private int maxPoints;
+
+    public UnityEvent<int> OnPointsChange;
+
 
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        maxPoints = pointsNeededForSuper * maxSuperCount;
     }
 
+
+    public bool CanEX(){
+        return superCount > 0;
+    }
 
     public void Shoot(Quaternion targetRotation)
     {
@@ -55,10 +65,12 @@ public class PlayerWeapon : MonoBehaviour
     }
 
     public void Super(Quaternion targetRotation){
-        if(superCount <= 0){
+        if(!CanEX()){
             return;
         }
-        Debug.Log("Super");
+        superCount--;
+        points -= pointsNeededForSuper;
+        OnPointsChange.Invoke(points);
         audioSource.PlayOneShot(superClip);
         GameObject bullet = Instantiate(superBulletPrefab, bulletSpawn.position, targetRotation);
         Rigidbody2D bulletRigidbody2D = bullet.GetComponent<Rigidbody2D>();
@@ -67,11 +79,15 @@ public class PlayerWeapon : MonoBehaviour
     }
 
     public void AddPoint(int amount){
-        Debug.Log("AddPoint");
         points += amount;
-        superCount = points / pointsNeededForSuper;
-        if(superCount > maxSuperCount){
-            superCount = maxSuperCount;
+        if(points > maxPoints){
+            points = maxPoints;
+        } else {
+            superCount = points / pointsNeededForSuper;
+            if(superCount > maxSuperCount){
+                superCount = maxSuperCount;
+            }
+            OnPointsChange.Invoke(points);
         }
     }
 }

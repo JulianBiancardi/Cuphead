@@ -24,14 +24,7 @@ public class EnemyHealth : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other){
-        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
-        if(damageDealer != null){
-            takeDamage(damageDealer.getDamage());
-        }
-    }
-
-    private void takeDamage(int amount){
+    public void TakeDamage(int amount){
         health -= amount;
         StartCoroutine(FlashWhite());
         if(health <= 0){

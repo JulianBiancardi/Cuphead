@@ -40,7 +40,7 @@ public class Announcer : MonoBehaviour
         audioSource.Play();
     }
 
-    public void knockOut(){
+    public void KnockOut(){
         audioSource.clip = knockOutSound;
         audioSource.Play();
         animator.SetTrigger("knockout");

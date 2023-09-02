@@ -20,8 +20,6 @@ public class SalSpudder_Death : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        //Move the enemy to the bottom center of the level
-        animator.gameObject.transform.position += new Vector3(-5, 0, 0);
        
     }
 }

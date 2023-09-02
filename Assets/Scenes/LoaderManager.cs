@@ -17,6 +17,7 @@ public class LoaderManager : MonoBehaviour
         Title,
         Tutorial,
         Loading,
+        Win,
         TheRootPack
     }
 
@@ -86,8 +87,13 @@ public class LoaderManager : MonoBehaviour
         loadingScreen.SetActive(false);
         animator.SetTrigger("intro");
         audioSource.volume = 1f;
+        yield return new WaitForSeconds(5f);
         if(currentScene == Scene.TheRootPack){
-            Announcer.Instance.Ready();
+            //Find the level manager and init the level
+            LevelManager levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+            if(levelManager != null){
+                levelManager.Init();
+            }
         }
     }
 }
