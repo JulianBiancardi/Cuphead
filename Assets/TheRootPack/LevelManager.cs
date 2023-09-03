@@ -51,7 +51,7 @@ public class LevelManager : MonoBehaviour
             salSpudder.SetActive(false);
             ollieBulb.SetActive(true);
         } else if(currentPhase == Phase.OllieBulb){
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(10);
             currentPhase = Phase.ChaunceyChanteny;
             ollieBulb.SetActive(false);
             chaunceyChanteny.SetActive(true);
@@ -66,7 +66,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void PlayerDeath(){
-        AudioManager.Instance.Loss();
+        AudioManager.Instance?.Loss();
         Announcer.Instance.Loss();
         StartCoroutine(RestartLevel());
     }

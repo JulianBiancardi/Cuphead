@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f1672601b122b242964a92bea7e92a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMode: 0
+  debugMode: 1
   player: {fileID: 5132865304233704772}
   lossSound: {fileID: 8300000, guid: 0240a0431a778c34bbdcb187370763db, type: 3}
   levelMusic: {fileID: 8300000, guid: 1482d212e3fcaa2478ca9c000bfe3911, type: 3}
@@ -473,7 +473,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4601235233026938373, guid: d6717b0949b60f94bb820e7a33d019f8, type: 3}
       propertyPath: health
-      value: 1
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -4601235233026938373, guid: d6717b0949b60f94bb820e7a33d019f8, type: 3}
       propertyPath: flashTime
@@ -591,13 +591,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2885023238055364488, guid: d6717b0949b60f94bb820e7a33d019f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3980244956811375161, guid: d6717b0949b60f94bb820e7a33d019f8, type: 3}
       propertyPath: m_Name
       value: SalSpudder
       objectReference: {fileID: 0}
     - target: {fileID: 3980244956811375161, guid: d6717b0949b60f94bb820e7a33d019f8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4356970517560466871, guid: d6717b0949b60f94bb820e7a33d019f8, type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -1066,6 +1070,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2218034828242096186, guid: cab6addafa0a75d4fa7533223e1cb65c, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 5167511626879561636, guid: 57392151afda72d449c1af6fc2770462, type: 2}
     - target: {fileID: 3351732891139018265, guid: cab6addafa0a75d4fa7533223e1cb65c, type: 3}
       propertyPath: collider
       value: 
@@ -1306,37 +1314,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 455872584}
     - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
-      propertyPath: OnEnemyDeath.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
-      propertyPath: OnEnemyDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
       propertyPath: OnEnemyDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 455872589}
-    - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
-      propertyPath: OnEnemyDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
-      propertyPath: OnEnemyDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NextBoss
-      objectReference: {fileID: 0}
-    - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
-      propertyPath: OnEnemyDeath.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
-      propertyPath: OnEnemyDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
-      propertyPath: OnEnemyDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

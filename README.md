@@ -6,10 +6,28 @@
 
 Welcome to the Cuphead educational recreation project! This repository is dedicated to our educational initiative where we aim to recreate certain aspects of the game, [Cuphead](https://store.steampowered.com/app/268910/Cuphead/) , developed by [StudioMDHR](http://studiomdhr.com/). Please note that this project is purely educational and not affiliated with the official Cuphead game or its creators.
 
+# Levels 
+
+## Tutorial Level
+
+Recreation of the tutorial level from the original game. The player is able to move around the level and interact with the tutorial objects.
+
 <div align="center">
   <img src="tutorial.gif" alt="Tutorial">
 </div>
 
+## The Root Pack
+
+Recreation of the first level from the original game. The Root Pack contains three bosses: Potato, Ollie Bulb, and  Chauncey Chanteny.
+
+<div align="center">
+  <img src="level1.gif" alt="Level1">
+</div>
+
+# Tools Used
+
+- [Unity](https://unity.com/)
+- [Visual Studio](https://visualstudio.microsoft.com/)
 
 # Assets Attribution
 

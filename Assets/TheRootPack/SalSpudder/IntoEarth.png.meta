@@ -126,10 +126,10 @@ TextureImporter:
       name: IntoEarth_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 4
         y: 1396
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: IntoEarth_1
       rect:
         serializedVersion: 2
-        x: 560
+        x: 562
         y: 1396
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: IntoEarth_2
       rect:
         serializedVersion: 2
-        x: 1118
+        x: 1120
         y: 1396
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +189,10 @@ TextureImporter:
       name: IntoEarth_3
       rect:
         serializedVersion: 2
-        x: 1676
+        x: 1678
         y: 1396
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +210,10 @@ TextureImporter:
       name: IntoEarth_4
       rect:
         serializedVersion: 2
-        x: 2234
+        x: 2236
         y: 1396
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: IntoEarth_5
       rect:
         serializedVersion: 2
-        x: 2
+        x: 4
         y: 934
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: IntoEarth_6
       rect:
         serializedVersion: 2
-        x: 560
+        x: 562
         y: 934
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +273,10 @@ TextureImporter:
       name: IntoEarth_7
       rect:
         serializedVersion: 2
-        x: 1118
+        x: 1120
         y: 934
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +294,10 @@ TextureImporter:
       name: IntoEarth_8
       rect:
         serializedVersion: 2
-        x: 1676
+        x: 1678
         y: 934
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +315,10 @@ TextureImporter:
       name: IntoEarth_9
       rect:
         serializedVersion: 2
-        x: 2234
+        x: 2236
         y: 934
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,10 +336,10 @@ TextureImporter:
       name: IntoEarth_10
       rect:
         serializedVersion: 2
-        x: 2
+        x: 4
         y: 472
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,10 +357,10 @@ TextureImporter:
       name: IntoEarth_11
       rect:
         serializedVersion: 2
-        x: 560
+        x: 562
         y: 472
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: IntoEarth_12
       rect:
         serializedVersion: 2
-        x: 1118
+        x: 1120
         y: 472
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,10 +399,10 @@ TextureImporter:
       name: IntoEarth_13
       rect:
         serializedVersion: 2
-        x: 1676
+        x: 1678
         y: 472
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,10 +420,10 @@ TextureImporter:
       name: IntoEarth_14
       rect:
         serializedVersion: 2
-        x: 2234
+        x: 2236
         y: 472
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,10 +441,10 @@ TextureImporter:
       name: IntoEarth_15
       rect:
         serializedVersion: 2
-        x: 2
+        x: 4
         y: 10
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +462,10 @@ TextureImporter:
       name: IntoEarth_16
       rect:
         serializedVersion: 2
-        x: 560
+        x: 562
         y: 10
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +483,10 @@ TextureImporter:
       name: IntoEarth_17
       rect:
         serializedVersion: 2
-        x: 1118
+        x: 1120
         y: 10
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,10 +504,10 @@ TextureImporter:
       name: IntoEarth_18
       rect:
         serializedVersion: 2
-        x: 1676
+        x: 1678
         y: 10
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +525,10 @@ TextureImporter:
       name: IntoEarth_19
       rect:
         serializedVersion: 2
-        x: 2234
+        x: 2236
         y: 10
-        width: 556
-        height: 459
+        width: 554
+        height: 458
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

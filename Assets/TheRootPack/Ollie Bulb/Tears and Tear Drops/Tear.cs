@@ -7,7 +7,7 @@ public class Tear : MonoBehaviour
     private Rigidbody2D rigidbody2D;
     private Animator animator;
     private AudioSource audioSource;
-    public AudioClip[] tearHitGroundSounds;
+    public AudioClip tearHitGroundSound;
     public float tearLifeTime = 2f;
 
     void Start(){
@@ -19,12 +19,11 @@ public class Tear : MonoBehaviour
 
 
     void OnTriggerEnter2D(Collider2D hitInfo){
-        //If tear hit ground set animator hitGround trigger
         if (hitInfo.gameObject.layer == LayerMask.NameToLayer("Ground")){
             rigidbody2D.velocity = Vector2.zero;
             rigidbody2D.gravityScale = 0;
             animator.SetTrigger("hitGround");
-            audioSource.PlayOneShot(tearHitGroundSounds[Random.Range(0, tearHitGroundSounds.Length)]);
+            audioSource.PlayOneShot(tearHitGroundSound);
         }
     }
 

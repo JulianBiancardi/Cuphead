@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 1461993249420639196}
   - component: {fileID: 3495976705601484164}
   - component: {fileID: 6105850267943216551}
-  - component: {fileID: 7047563348590634670}
   - component: {fileID: 1330624222623800282}
   - component: {fileID: 4110191574822977324}
   - component: {fileID: 4639459292840342328}
   - component: {fileID: 3488148708054967546}
   - component: {fileID: 3462502088953518411}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,25 +117,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7047563348590634670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3587329211028889991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82fefebe6b0fe9343b013f97487629ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tearHitGroundSounds:
-  - {fileID: 8300000, guid: 96836195cb31f29438b4eef6e017bb7b, type: 3}
-  - {fileID: 8300000, guid: f26bd598b497a4b4f841ee888bf141e1, type: 3}
-  - {fileID: 8300000, guid: 29cc65d1376877a4e974fd033ab9e86a, type: 3}
-  - {fileID: 8300000, guid: d68018b6d9a36ef40805ac27ffd51ad2, type: 3}
-  - {fileID: 8300000, guid: e4c9ba61c0d2fba45abfad5669e0ac4d, type: 3}
-  - {fileID: 8300000, guid: 37fc7d7cd2bef9e41841f7bbb51b886d, type: 3}
 --- !u!70 &1330624222623800282
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -205,7 +185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82fefebe6b0fe9343b013f97487629ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tearHitGroundSounds: []
+  tearHitGroundSound: {fileID: 8300000, guid: 96836195cb31f29438b4eef6e017bb7b, type: 3}
+  tearLifeTime: 2
 --- !u!114 &3488148708054967546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +208,7 @@ AudioSource:
   m_GameObject: {fileID: 3587329211028889991}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5167511626879561636, guid: 57392151afda72d449c1af6fc2770462, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.5
