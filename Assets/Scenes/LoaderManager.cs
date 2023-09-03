@@ -11,6 +11,7 @@ public class LoaderManager : MonoBehaviour
     private bool isLoading = false;
     public GameObject loadingScreen;
     public AudioClip titleMusic;
+    public AudioClip levelMusic;
 
     public enum Scene
     {
@@ -30,7 +31,7 @@ public class LoaderManager : MonoBehaviour
     void Start() {
         animator = GetComponent<Animator>();
         animator.SetTrigger("intro");
-        AudioManager.Instance.PlayMusic(titleMusic, true);
+        AudioManager.Instance.PlayMusic(titleMusic, false);
     }
 
     void Update() {
@@ -82,6 +83,8 @@ public class LoaderManager : MonoBehaviour
             if(levelManager != null){
                 levelManager.Init();
             }
+        } else if (currentScene == Scene.Title){
+            AudioManager.Instance.PlayMusic(titleMusic, false);
         }
     }
 }

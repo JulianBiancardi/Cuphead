@@ -39,6 +39,7 @@ public class EnemyHealth : MonoBehaviour
                 lightning.Play();
                 stars.Play();
             }
+            OnEnemyDeath.Invoke();
         }
     }
     
@@ -49,6 +50,6 @@ public class EnemyHealth : MonoBehaviour
     }
 
     public void enemyDeath(){
-        OnEnemyDeath.Invoke();
+        //OnEnemyDeath.Invoke();
     }
 }

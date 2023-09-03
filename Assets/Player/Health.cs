@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class Health : MonoBehaviour, IObservable{
+    public Collider2D collider2D;
     private AudioSource audioSource;
     private Animator animator;
     
@@ -46,7 +47,8 @@ public class Health : MonoBehaviour, IObservable{
         animator.SetTrigger("hit");
         CameraShake.Instance.ShakeCamera(1f, 0.2f);
         if (health <= 0){
-            animator.SetBool("isDead", true);
+            collider2D.enabled = false;
+            animator.SetTrigger("death");
             OnPlayerDeath.Invoke();
         }
         notifyObservers(this);

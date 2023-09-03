@@ -421,7 +421,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -869,6 +869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 819828906}
   titleMusic: {fileID: 8300000, guid: e2daa0439ab94b246beaf02d55899bed, type: 3}
+  levelMusic: {fileID: 8300000, guid: 1482d212e3fcaa2478ca9c000bfe3911, type: 3}
 --- !u!95 &1930030192
 Animator:
   serializedVersion: 5

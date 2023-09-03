@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
     void Awake(){
         if(Instance == null){
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         } else {
             Destroy(gameObject);
         }
@@ -49,6 +49,7 @@ public class AudioManager : MonoBehaviour
     }
 
     IEnumerator FadeIn(AudioSource audioSource, float FadeTime) {
+        audioSource.pitch = 1;
         float startVolume = 0.1f;
  
         audioSource.volume = 0;
@@ -69,5 +70,17 @@ public class AudioManager : MonoBehaviour
 
     public void FadeInMusic(float FadeTime){
         StartCoroutine(FadeIn(musicSource, FadeTime));
+    }
+
+    public void ResetVolume(){
+        musicSource.volume = 1;
+    }
+
+    public void AdjustPitch(AudioSource audioSource, float pitch){
+        audioSource.pitch = pitch;
+    }
+
+    public void Loss(){
+        AdjustPitch(musicSource, 0.8f);
     }
 }

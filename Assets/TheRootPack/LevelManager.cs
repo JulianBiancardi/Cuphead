@@ -4,8 +4,11 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour
-{ 
+{
+    public bool debugMode = false; 
     public GameObject player;
+    public AudioClip lossSound;
+    public AudioClip levelMusic;
     public GameObject salSpudder;
     public GameObject ollieBulb;
     public GameObject chaunceyChanteny;
@@ -22,6 +25,9 @@ public class LevelManager : MonoBehaviour
         ollieBulb.SetActive(false);
         chaunceyChanteny.SetActive(false);
         currentPhase = Phase.SalSpudder;
+        if(debugMode){
+            Init();
+        }
     }
 
 
@@ -30,7 +36,7 @@ public class LevelManager : MonoBehaviour
         salSpudder.SetActive(true);
         currentPhase = Phase.SalSpudder;
         Announcer.Instance.Ready();
-        audioSource.Play();
+        AudioManager.Instance.PlayMusic(levelMusic, true);
     }
 
     public void NextBoss(){
@@ -44,14 +50,34 @@ public class LevelManager : MonoBehaviour
             chaunceyChanteny.SetActive(true);
         } else {
             Announcer.Instance.KnockOut();
-            OnWin.Invoke();
+            GameObject[] carrots = GameObject.FindGameObjectsWithTag("Projectile");
+            foreach (GameObject carrot in carrots){
+                Destroy(carrot);
+            }
+            StartCoroutine(Win());
         }
     }
 
     public void PlayerDeath(){
+        AudioManager.Instance.PlaySFX(lossSound);
+        AudioManager.Instance.Loss();
+        Announcer.Instance.Loss();
+        StartCoroutine(RestartLevel());
+    }
+
+    IEnumerator RestartLevel(){
+        yield return new WaitForSeconds(5);
         LoaderManager loaderManager = GameObject.Find("LoaderManager").GetComponent<LoaderManager>();
         if(loaderManager != null){
             loaderManager.LoadSceneAsync(LoaderManager.Scene.TheRootPack);
+        }
+    }
+
+    IEnumerator Win(){
+        yield return new WaitForSeconds(5);
+        LoaderManager loaderManager = GameObject.Find("LoaderManager").GetComponent<LoaderManager>();
+        if(loaderManager != null){
+            loaderManager.LoadSceneAsync(LoaderManager.Scene.Title);
         }
     }
 }

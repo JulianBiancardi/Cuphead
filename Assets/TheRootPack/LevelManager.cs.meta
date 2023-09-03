@@ -3,7 +3,13 @@ guid: 6f1672601b122b242964a92bea7e92a4
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - player: {instanceID: 0}
+  - lossSound: {fileID: 8300000, guid: dbe5317e6f8e50c46a99527f32c3d6ae, type: 3}
+  - levelMusic: {fileID: 8300000, guid: 1482d212e3fcaa2478ca9c000bfe3911, type: 3}
+  - salSpudder: {instanceID: 0}
+  - ollieBulb: {instanceID: 0}
+  - chaunceyChanteny: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

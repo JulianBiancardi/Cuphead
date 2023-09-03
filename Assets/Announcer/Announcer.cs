@@ -15,15 +15,16 @@ public class Announcer : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        animator.enabled = false;
     }
 
     void Start(){
-        animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
     }
 
     public void Ready(){
-        animator.SetTrigger("intro");
+        animator.enabled = true;
     }
 
     public void playReadySound(){
@@ -44,5 +45,9 @@ public class Announcer : MonoBehaviour
         audioSource.clip = knockOutSound;
         audioSource.Play();
         animator.SetTrigger("knockout");
+    }
+
+    public void Loss(){
+        animator.SetTrigger("loss");
     }
 }

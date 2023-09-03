@@ -19,7 +19,6 @@ public class PlayerStateManager : MonoBehaviour
     public Animator animator {get; private set;}
     public Transform transform {get; private set;}
     public PlayerWeapon playerWeapon {get; private set;}
-    public AudioSource audioSource {get; private set;}
     public AudioClip jumpSound;
     public AudioClip dashSound;
     public AudioClip landSound;
@@ -54,7 +53,6 @@ public class PlayerStateManager : MonoBehaviour
         animator = GetComponent<Animator>();
         transform = GetComponent<Transform>();
         playerWeapon = GetComponent<PlayerWeapon>();
-        audioSource = GetComponent<AudioSource>();
         playerInput = GetComponent<PlayerInput>();
     }
 
@@ -160,7 +158,7 @@ public class PlayerStateManager : MonoBehaviour
         isDashing = true;
         rigidbody2D.gravityScale = 0;
         rigidbody2D.velocity = new Vector2(dashForce * (int) direction, 0);
-        audioSource.PlayOneShot(dashSound);
+        AudioManager.Instance.PlaySFX(dashSound);
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
         rigidbody2D.gravityScale = 5;
