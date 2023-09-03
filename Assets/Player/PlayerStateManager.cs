@@ -15,6 +15,7 @@ public class PlayerStateManager : MonoBehaviour
 
     public Rigidbody2D rigidbody2D {get; private set;}
     public Collider2D collider2D {get; private set;}
+    public AudioSource audioSource {get; private set;}
     public PlayerInput playerInput {get; private set;}
     public Animator animator {get; private set;}
     public Transform transform {get; private set;}
@@ -50,9 +51,10 @@ public class PlayerStateManager : MonoBehaviour
         jumpState = new PlayerJumpState(this);
         rigidbody2D = GetComponent<Rigidbody2D>();
         collider2D = GetComponent<Collider2D>();
+        audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         transform = GetComponent<Transform>();
-        playerWeapon = GetComponent<PlayerWeapon>();
+        playerWeapon = GetComponentInChildren<PlayerWeapon>();
         playerInput = GetComponent<PlayerInput>();
     }
 
@@ -158,7 +160,7 @@ public class PlayerStateManager : MonoBehaviour
         isDashing = true;
         rigidbody2D.gravityScale = 0;
         rigidbody2D.velocity = new Vector2(dashForce * (int) direction, 0);
-        AudioManager.Instance.PlaySFX(dashSound);
+        audioSource.PlayOneShot(dashSound);
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
         rigidbody2D.gravityScale = 5;

@@ -19,12 +19,13 @@ public class HealthUI : MonoBehaviour, IObserver{
     }
 
     public void update(IObservable context){
-        Debug.Log("HealthUI updated");
         Health health = (Health) context;
-        Debug.Log("Health: " + health.getHealth());
+        if(health.getHealth() <= 0){
+            image.sprite = deathSprite;
+            return;
+        }
 
-        int spriteIndex = Mathf.Clamp( health.getHealth(), 0, lifeSprites.Length - 1);
-        image.sprite = lifeSprites[spriteIndex];
+        image.sprite = lifeSprites[health.getHealth() - 1];
     }
 
 }

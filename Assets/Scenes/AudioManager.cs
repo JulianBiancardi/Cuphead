@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance {get; private set;}
-    public AudioSource musicSource;
-    public AudioSource sfxSource;
+    public AudioMixer masterMixer;
 
     void Awake(){
         if(Instance == null){
@@ -18,34 +17,25 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayMusic(AudioClip clip, bool loop){
-        musicSource.clip = clip;
-        musicSource.loop = loop;
-        musicSource.Play();
     }
 
     public void PlaySFX(AudioClip clip){
-        sfxSource.PlayOneShot(clip);
     }
 
     public void StopMusic(){
-        musicSource.Stop();
     }
 
     public void StopSFX(){
-        sfxSource.Stop();
     }
 
-    IEnumerator FadeOut(AudioSource audioSource, float FadeTime) {
-        float startVolume = audioSource.volume;
- 
-        while (audioSource.volume > 0) {
-            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
- 
+    IEnumerator FadeOut(string variable, float FadeTime) {
+        masterMixer.GetFloat(variable, out float startVolume);
+
+        while (startVolume > -80) {
+            startVolume -= 80 * Time.deltaTime / FadeTime;
+            masterMixer.SetFloat(variable, startVolume);
             yield return null;
         }
- 
-        audioSource.Stop ();
-        audioSource.volume = startVolume;
     }
 
     IEnumerator FadeIn(AudioSource audioSource, float FadeTime) {
@@ -65,22 +55,20 @@ public class AudioManager : MonoBehaviour
     }
 
     public void FadeOutMusic(float FadeTime){
-        StartCoroutine(FadeOut(musicSource, FadeTime));
+        //StartCoroutine(FadeOut("musicVolume", FadeTime));
     }
 
     public void FadeInMusic(float FadeTime){
-        StartCoroutine(FadeIn(musicSource, FadeTime));
     }
 
     public void ResetVolume(){
-        musicSource.volume = 1;
     }
 
-    public void AdjustPitch(AudioSource audioSource, float pitch){
-        audioSource.pitch = pitch;
+    public void AdjustMusicPitch(){
+        masterMixer.SetFloat("musicPitch", 1f);
     }
 
     public void Loss(){
-        AdjustPitch(musicSource, 0.8f);
+        masterMixer.SetFloat("musicPitch", 0.7f);
     }
 }

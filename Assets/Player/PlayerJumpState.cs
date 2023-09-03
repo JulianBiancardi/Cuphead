@@ -25,7 +25,8 @@ public class PlayerJumpState : State
         context.rigidbody2D.velocity = new Vector2(context.rigidbody2D.velocity.x, context.jumpForce);
         context.isGrounded = false;
         canParry = true;
-        AudioManager.Instance.PlaySFX(context.jumpSound);
+        context.audioSource.clip = context.jumpSound;
+        context.audioSource.Play();
     }
 
     public override void UpdateState()
@@ -44,7 +45,7 @@ public class PlayerJumpState : State
     public override void Exit()
     {
         context.animator.SetBool("isGrounded", false);
-        AudioManager.Instance.PlaySFX(context.landSound);
+        context.audioSource.PlayOneShot(context.landSound);
         context.LandGroundFX();
     }
 
@@ -60,7 +61,7 @@ public class PlayerJumpState : State
         Vector2 size = new Vector2(1, 1);
         RaycastHit2D hit = Physics2D.BoxCast(context.transform.position, size, 0, Vector2.right * (int)direction, 1f, LayerMask.GetMask("Parryable"));
         if(hit.collider != null){
-            AudioManager.Instance.PlaySFX(context.parrySound);
+            context.audioSource.PlayOneShot(context.parrySound);
             context.rigidbody2D.velocity = new Vector2(context.rigidbody2D.velocity.x, context.jumpForce / 1.2f);
             canParry = true;
         }

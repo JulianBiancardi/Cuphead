@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
     public UnityEvent OnWin;
     private AudioSource audioSource;
 
+
     private enum Phase {SalSpudder, OllieBulb, ChaunceyChanteny};
     private Phase currentPhase;
 
@@ -36,15 +37,21 @@ public class LevelManager : MonoBehaviour
         salSpudder.SetActive(true);
         currentPhase = Phase.SalSpudder;
         Announcer.Instance.Ready();
-        AudioManager.Instance.PlayMusic(levelMusic, true);
+        audioSource.Play();
     }
 
     public void NextBoss(){
+        StartCoroutine(ChangePhase());
+    }
+
+    private IEnumerator ChangePhase(){
         if(currentPhase == Phase.SalSpudder){
+            yield return new WaitForSeconds(3);
             currentPhase = Phase.OllieBulb;
             salSpudder.SetActive(false);
             ollieBulb.SetActive(true);
         } else if(currentPhase == Phase.OllieBulb){
+            yield return new WaitForSeconds(3);
             currentPhase = Phase.ChaunceyChanteny;
             ollieBulb.SetActive(false);
             chaunceyChanteny.SetActive(true);
@@ -59,7 +66,6 @@ public class LevelManager : MonoBehaviour
     }
 
     public void PlayerDeath(){
-        AudioManager.Instance.PlaySFX(lossSound);
         AudioManager.Instance.Loss();
         Announcer.Instance.Loss();
         StartCoroutine(RestartLevel());

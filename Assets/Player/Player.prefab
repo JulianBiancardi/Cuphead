@@ -264,7 +264,6 @@ GameObject:
   - component: {fileID: 8654558203260472869}
   - component: {fileID: 2690039857237717952}
   - component: {fileID: 4931138373084052333}
-  - component: {fileID: 4749983275420712610}
   - component: {fileID: 3661464670993705064}
   - component: {fileID: 9091448071114900229}
   m_Layer: 7
@@ -449,17 +448,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0cab23ae6d3994bab26155b6be0855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 8
+  collider2D: {fileID: 6585347189514764770}
+  health: 3
+  invulnerabilityTime: 6
   uiObserver: {fileID: 2667269396316026015}
   damageSound: {fileID: 8300000, guid: 4a53b3ec81651d14689d43816f7b7f14, type: 3}
+  deathSound: {fileID: 8300000, guid: 0240a0431a778c34bbdcb187370763db, type: 3}
   OnPlayerDeath:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.StateGraph,
-          Unity.VisualScripting.State
-        m_MethodName: TriggerUnityEvent
-        m_Mode: 5
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: PlayerDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OnPlayerDeath
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9091448071114900229}
+        m_TargetAssemblyTypeName: UnityEngine.InputSystem.PlayerInput, Unity.InputSystem
+        m_MethodName: DeactivateInput
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -477,9 +490,9 @@ AudioSource:
   m_GameObject: {fileID: 4985896551419817893}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5167511626879561636, guid: 57392151afda72d449c1af6fc2770462, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -584,43 +597,6 @@ MonoBehaviour:
   parrySound: {fileID: 8300000, guid: ffb18a3d7b5f84c47a078c7153322f9d, type: 3}
   landGroundEffect: {fileID: 6666800042481671483, guid: b4701d064e8f5f14f995cbe4308dfd20, type: 3}
   groundCollider: {fileID: 3661464670993705064}
---- !u!114 &4749983275420712610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4985896551419817893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d9abfe0d05f3547a6e408691917747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1020438932524477005, guid: c7a852d966be91043bab37be95529929, type: 3}
-  superBulletPrefab: {fileID: 1206117143761155820, guid: d84e023955a89f2428533ccad46eb845, type: 3}
-  bulletSpawn: {fileID: 77741811715257}
-  startShootClip: {fileID: 8300000, guid: caa3f3bd88ecb60419e059b49152e9db, type: 3}
-  shootClip: {fileID: 8300000, guid: d159bf9b309727940ab939ea7cd9ca6b, type: 3}
-  superClip: {fileID: 8300000, guid: d057ea4f1ddd3bf41ad5e208aeecb23a, type: 3}
-  bulletSpeed: 20
-  bulletLife: 1
-  fireRate: 0.1
-  superSpeed: 15
-  OnPointsChange:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7044491241700313098}
-        m_TargetAssemblyTypeName: SuperUI, Assembly-CSharp
-        m_MethodName: UpdateCards
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!68 &3661464670993705064
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -675,7 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 8eeb7258b8605684ab7c615094e0e980, type: 3}
-  m_NotificationBehavior: 1
+  m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -739,6 +715,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: ebf4ff14-04e2-4021-af2e-49e19828473d
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e708bb66-5b90-45a5-b590-3e25520270e7
+    m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: dfd8b989-74d5-4089-8363-b366606da185
+    m_ActionName: Player/Dash[/Keyboard/leftShift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -861,6 +845,7 @@ GameObject:
   - component: {fileID: 77741811715257}
   - component: {fileID: 6793864351552404619}
   - component: {fileID: 6651733185040702626}
+  - component: {fileID: 2851563941406628678}
   m_Layer: 7
   m_Name: ShootPoint
   m_TagString: Untagged
@@ -944,8 +929,8 @@ AudioSource:
   m_GameObject: {fileID: 7409194814055409683}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9bb9319eff6f93b4998c1c7bd3dd2f85, type: 3}
+  OutputAudioMixerGroup: {fileID: 5167511626879561636, guid: 57392151afda72d449c1af6fc2770462, type: 2}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1031,6 +1016,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2851563941406628678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409194814055409683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0d9abfe0d05f3547a6e408691917747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1020438932524477005, guid: c7a852d966be91043bab37be95529929, type: 3}
+  superBulletPrefab: {fileID: 1206117143761155820, guid: d84e023955a89f2428533ccad46eb845, type: 3}
+  bulletSpawn: {fileID: 77741811715257}
+  startShootClip: {fileID: 8300000, guid: caa3f3bd88ecb60419e059b49152e9db, type: 3}
+  shootClip: {fileID: 8300000, guid: d159bf9b309727940ab939ea7cd9ca6b, type: 3}
+  superClip: {fileID: 8300000, guid: d057ea4f1ddd3bf41ad5e208aeecb23a, type: 3}
+  bulletSpeed: 20
+  bulletLife: 1
+  fireRate: 0.1
+  superSpeed: 15
+  OnPointsChange:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7513721319351612521
 GameObject:
   m_ObjectHideFlags: 0

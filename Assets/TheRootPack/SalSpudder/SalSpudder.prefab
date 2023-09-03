@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7616027171429710632}
   - component: {fileID: 1982589531319003238}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BackEarth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 6668223615634608911}
   - component: {fileID: 5361715949994258771}
   - component: {fileID: -4601235233026938373}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SalSpudder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6945534469134988602}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8546596596616420318}
   - component: {fileID: 6596384304881346858}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Earth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3725138106080732855}
   - component: {fileID: 3120332909871056247}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,9 +590,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2528227585828299763}
     m_Modifications:
+    - target: {fileID: 414157262584748849, guid: b2c6f36bbc05b884da09269ce9577117, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2417338476464502294, guid: b2c6f36bbc05b884da09269ce9577117, type: 3}
       propertyPath: m_Name
       value: BossDefeatedEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417338476464502294, guid: b2c6f36bbc05b884da09269ce9577117, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3117654265247978905, guid: b2c6f36bbc05b884da09269ce9577117, type: 3}
       propertyPath: m_LocalScale.x
@@ -641,6 +649,14 @@ PrefabInstance:
     - target: {fileID: 3117654265247978905, guid: b2c6f36bbc05b884da09269ce9577117, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300866195389548267, guid: b2c6f36bbc05b884da09269ce9577117, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736594772256296643, guid: b2c6f36bbc05b884da09269ce9577117, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

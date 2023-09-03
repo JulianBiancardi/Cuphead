@@ -31,12 +31,11 @@ public class LoaderManager : MonoBehaviour
     void Start() {
         animator = GetComponent<Animator>();
         animator.SetTrigger("intro");
-        AudioManager.Instance.PlayMusic(titleMusic, false);
     }
 
     void Update() {
         if(Input.GetKeyDown(KeyCode.Space) && currentScene == Scene.Title && !isLoading){
-           LoadSceneAsync(Scene.Tutorial);
+           LoadSceneAsync(Scene.TheRootPack);
         }
     }
 
@@ -76,7 +75,7 @@ public class LoaderManager : MonoBehaviour
         isLoading = false;
         loadingScreen.SetActive(false);
         animator.SetTrigger("intro");
-        AudioManager.Instance.FadeInMusic(0.5f);
+        AudioManager.Instance.AdjustMusicPitch();
         if(currentScene == Scene.Title){
             AudioManager.Instance.PlayMusic(titleMusic, false);
         } else {
