@@ -36,7 +36,7 @@ public class LoaderManager : MonoBehaviour
 
     void Update() {
         if(Input.GetKeyDown(KeyCode.Space) && currentScene == Scene.Title && !isLoading){
-           LoadSceneAsync(Scene.TheRootPack);
+           LoadSceneAsync(Scene.Tutorial);
         }
     }
 
@@ -77,14 +77,14 @@ public class LoaderManager : MonoBehaviour
         loadingScreen.SetActive(false);
         animator.SetTrigger("intro");
         AudioManager.Instance.FadeInMusic(0.5f);
-        if(currentScene == Scene.TheRootPack){
-            //Find the level manager and init the level
-            LevelManager levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
-            if(levelManager != null){
-                levelManager.Init();
-            }
-        } else if (currentScene == Scene.Title){
+        if(currentScene == Scene.Title){
             AudioManager.Instance.PlayMusic(titleMusic, false);
+        } else {
+            //Find the level manager and init the level
+            GameObject levelManager = GameObject.Find("LevelManager");
+            if(levelManager != null){
+                levelManager.SendMessage("Init");
+            }
         }
     }
 }

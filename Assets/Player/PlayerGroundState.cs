@@ -23,7 +23,7 @@ public class PlayerGroundState : State
         }
 
         if(!context.isDashing){
-            context.rigidbody2D.velocity = new Vector2(context.move * speed, context.rigidbody2D.velocity.y);
+            context.rigidbody2D.velocity = new Vector2(context.targetXaxis * speed, context.rigidbody2D.velocity.y);
         }
     }
 

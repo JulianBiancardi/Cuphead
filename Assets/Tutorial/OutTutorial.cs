@@ -7,7 +7,6 @@ public class DoorOutTutorial : MonoBehaviour
 {
     private Collider2D collider;
 
-    // Start is called before the first frame update
     void Start()
     {
         collider = GetComponent<Collider2D>();
@@ -17,7 +16,6 @@ public class DoorOutTutorial : MonoBehaviour
         if(other.gameObject.CompareTag("Player")){
             LoaderManager loaderManager = GameObject.Find("LoaderManager").GetComponent<LoaderManager>();
             if(loaderManager){
-                Debug.Log("LOADER MANAGER: " + loaderManager);
                 collider.enabled = false;
                 loaderManager.LoadSceneAsync(LoaderManager.Scene.TheRootPack);
             }

@@ -166,6 +166,10 @@ public class PlayerStateManager : MonoBehaviour
 
     void Flip(float horizontal)
     {
+        if(isDashing){
+            return;
+        }
+
         if(horizontal > 0){
             direction = PlayerStateManager.Direction.Right;
             transform.rotation = Quaternion.Euler(0, 0, 0);
