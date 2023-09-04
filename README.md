@@ -4,7 +4,7 @@
   <img src="CupheadBanner.png" alt="CupheadBanner" width="200"/>
 </p>
 
-Welcome to the Cuphead educational recreation project! This repository is dedicated to our educational initiative where we aim to recreate certain aspects of the game, [Cuphead](https://store.steampowered.com/app/268910/Cuphead/) , developed by [StudioMDHR](http://studiomdhr.com/). Please note that this project is purely educational and not affiliated with the official Cuphead game or its creators.
+Welcome to the Cuphead educational recreation project! This repository is dedicated to my educational initiative where i aim to recreate certain aspects of the game, [Cuphead](https://store.steampowered.com/app/268910/Cuphead/) , developed by [StudioMDHR](http://studiomdhr.com/). Please note that this project is purely educational and not affiliated with the official Cuphead game or its creators.
 
 # Levels 
 
@@ -35,7 +35,7 @@ I'd like to extend my gratitude to the following sources for providing the asset
 
   - Sprites: The artwork used in this project is from https://www.spriters-resource.com/pc_computer/cupheaddontdealwiththedevil/.
 
-  - Music: The music samples used for educational purposes are sourced from Royalty-Free Music Library.
+  - Music: The music samples used for educational purposes are sourced from https://drive.google.com/drive/u/1/folders/0B6WoEC7gbB6sU21Fd0lucDVuWTg?resourcekey=0-B-_vlHZgTaGlMI2ptNnpvQ.
 
     
 # Legal Disclaimer
