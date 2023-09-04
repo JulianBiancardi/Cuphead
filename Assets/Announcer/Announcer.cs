@@ -11,6 +11,7 @@ public class Announcer : MonoBehaviour
     public AudioClip[] readySounds;
     public AudioClip[] goSounds;
     public AudioClip knockOutSound;
+    public AudioClip knockOutBellSound;
 
     private void Awake()
     {
@@ -42,8 +43,8 @@ public class Announcer : MonoBehaviour
     }
 
     public void KnockOut(){
-        audioSource.clip = knockOutSound;
-        audioSource.Play();
+        audioSource.PlayOneShot(knockOutSound);
+        audioSource.PlayOneShot(knockOutBellSound);
         animator.SetTrigger("knockout");
     }
 

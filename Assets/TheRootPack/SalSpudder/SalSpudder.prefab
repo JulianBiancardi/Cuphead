@@ -176,7 +176,7 @@ AudioSource:
   m_GameObject: {fileID: 3980244956811375161}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5167511626879561636, guid: 57392151afda72d449c1af6fc2770462, type: 2}
   m_audioClip: {fileID: 8300000, guid: 41c2207bfa4cff64d974331a88bf8833, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
@@ -295,7 +295,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.041856766, y: 1.9691303}
+  m_Offset: {x: 0.1350109, y: 1.9691303}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -306,7 +306,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.737484, y: 3.9382606}
+  m_Size: {x: 2.7389007, y: 3.9382606}
   m_EdgeRadius: 0
 --- !u!50 &6668223615634608911
 Rigidbody2D:
@@ -362,7 +362,7 @@ MonoBehaviour:
   health: 1
   bossManager: {fileID: 0}
   spriteObject: {fileID: 5931590562094357155}
-  flashTime: 0.1
+  flashTime: 0.05
   flashIntensity: 0.1
   collider: {fileID: 560481012282651458}
   deathSound: {fileID: 8300000, guid: ec67f9902b7ae5a439135768bc7d4d8e, type: 3}
@@ -370,16 +370,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.StateGraph,
-          Unity.VisualScripting.State
-        m_MethodName: TriggerUnityEvent
-        m_Mode: 5
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: NextBoss
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SalSpudderDeath
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   boosDeathEffect: {fileID: 6842262765675181941}

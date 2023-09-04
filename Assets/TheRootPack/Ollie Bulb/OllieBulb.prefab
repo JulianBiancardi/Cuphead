@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8524611088301150909}
   - component: {fileID: 2218034828242096186}
   - component: {fileID: 3351732891139018265}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OllieBulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,9 +39,9 @@ Transform:
   - {fileID: 528032521359718197}
   - {fileID: 7831457517538705728}
   - {fileID: 6371027557141004633}
+  - {fileID: 5412601818765019911}
   - {fileID: 6337521191884998465}
   - {fileID: 6085878891290187033}
-  - {fileID: 5412601818765019911}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4453866107525808783
@@ -258,6 +258,7 @@ MonoBehaviour:
   OnEnemyDeath:
     m_PersistentCalls:
       m_Calls: []
+  boosDeathEffect: {fileID: 0}
 --- !u!1 &2004944989349195302
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,7 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5412601818765019911}
   - component: {fileID: 4807408031419397324}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BackEarth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7831457517538705728}
   - component: {fileID: 2077186466106851277}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TearSpawn1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 528032521359718197}
   - component: {fileID: 2542901406213947411}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Earth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +484,7 @@ GameObject:
   - component: {fileID: 4269366964953064090}
   - component: {fileID: 7666636376866698706}
   - component: {fileID: 933776269995526119}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6337521191884998465}
   - component: {fileID: 2626077585184528131}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TearRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -609,8 +610,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4268056757711615669}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21, y: 0.68, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.21, y: 0.68000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -678,7 +679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6085878891290187033}
   - component: {fileID: 1806462526973294960}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TearLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,8 +694,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4438913389027131912}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.39, y: 0.68, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.38999996, y: 0.68000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -762,7 +763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6371027557141004633}
   - component: {fileID: 3278279358806237911}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TearSpawn2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

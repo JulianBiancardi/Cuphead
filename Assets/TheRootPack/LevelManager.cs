@@ -51,23 +51,28 @@ public class LevelManager : MonoBehaviour
             salSpudder.SetActive(false);
             ollieBulb.SetActive(true);
         } else if(currentPhase == Phase.OllieBulb){
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(3);
             currentPhase = Phase.ChaunceyChanteny;
             ollieBulb.SetActive(false);
             chaunceyChanteny.SetActive(true);
         } else {
             Announcer.Instance.KnockOut();
-            GameObject[] carrots = GameObject.FindGameObjectsWithTag("Projectile");
-            foreach (GameObject carrot in carrots){
-                Destroy(carrot);
-            }
+            StopCarrots();
             StartCoroutine(Win());
+        }
+    }
+
+    private void StopCarrots(){
+        GameObject[] carrots = GameObject.FindGameObjectsWithTag("Projectile");
+        foreach (GameObject carrot in carrots){
+            carrot.GetComponent<FollowPlayer>().stopFollow();
         }
     }
 
     public void PlayerDeath(){
         AudioManager.Instance?.Loss();
         Announcer.Instance.Loss();
+        StopCarrots();
         StartCoroutine(RestartLevel());
     }
 

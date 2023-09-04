@@ -58,8 +58,17 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 10.933332
+        time: 10.933333
         value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 10.966665
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -70,7 +79,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: Stage2/TearRight
+    path: TearRight
     classID: 212
     script: {fileID: 0}
     flags: 0
@@ -115,8 +124,17 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 10.949999
+        time: 10.95
         value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 10.983332
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -127,7 +145,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: Stage2/TearLeft
+    path: TearLeft
     classID: 212
     script: {fileID: 0}
     flags: 0
@@ -1169,10 +1187,12 @@ AnimationClip:
       value: {fileID: 21300000, guid: 55a35a0706f125b4781ab75bd895e100, type: 3}
     - time: 10.9
       value: {fileID: 21300000, guid: 3be1696b7b87bf4408b0036fe855ad0b, type: 3}
-    - time: 10.916666
+    - time: 10.916667
       value: {fileID: 0}
+    - time: 10.949999
+      value: {fileID: 21300000, guid: c8f4bb96248e9d64ea1c867acc3dc206, type: 3}
     attribute: m_Sprite
-    path: Stage2/TearRight
+    path: TearRight
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -1726,10 +1746,12 @@ AnimationClip:
       value: {fileID: 21300000, guid: 55a35a0706f125b4781ab75bd895e100, type: 3}
     - time: 10.9
       value: {fileID: 21300000, guid: 3be1696b7b87bf4408b0036fe855ad0b, type: 3}
-    - time: 10.933332
+    - time: 10.933333
       value: {fileID: 0}
+    - time: 10.966665
+      value: {fileID: 21300000, guid: c8f4bb96248e9d64ea1c867acc3dc206, type: 3}
     attribute: m_Sprite
-    path: Stage2/TearLeft
+    path: TearLeft
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -1741,7 +1763,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 4065227774
+      path: 2310991005
       attribute: 3305885265
       script: {fileID: 0}
       typeID: 212
@@ -1750,7 +1772,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2548004039
+      path: 3597383949
       attribute: 3305885265
       script: {fileID: 0}
       typeID: 212
@@ -1768,7 +1790,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 4065227774
+      path: 2310991005
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -1777,7 +1799,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2548004039
+      path: 3597383949
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -2302,6 +2324,7 @@ AnimationClip:
     - {fileID: 21300000, guid: 3be1696b7b87bf4408b0036fe855ad0b, type: 3}
     - {fileID: 0}
     - {fileID: 21300000, guid: c8f4bb96248e9d64ea1c867acc3dc206, type: 3}
+    - {fileID: 21300000, guid: c8f4bb96248e9d64ea1c867acc3dc206, type: 3}
     - {fileID: 21300000, guid: 095b8cf185a4db2489a9e57488daeaa3, type: 3}
     - {fileID: 21300000, guid: 5270dfcbc9aef0f42a1bd76b40fc0fea, type: 3}
     - {fileID: 21300000, guid: c6455c0d4de06f44490abc2e0d1995a2, type: 3}
@@ -2576,12 +2599,13 @@ AnimationClip:
     - {fileID: 21300000, guid: 55a35a0706f125b4781ab75bd895e100, type: 3}
     - {fileID: 21300000, guid: 3be1696b7b87bf4408b0036fe855ad0b, type: 3}
     - {fileID: 0}
+    - {fileID: 21300000, guid: c8f4bb96248e9d64ea1c867acc3dc206, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 10.949999
+    m_StopTime: 10.983332
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -2638,8 +2662,17 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 10.933332
+        time: 10.933333
         value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 10.966665
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -2650,7 +2683,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: Stage2/TearRight
+    path: TearRight
     classID: 212
     script: {fileID: 0}
     flags: 0
@@ -2695,8 +2728,17 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 10.949999
+        time: 10.95
         value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 10.983332
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -2707,7 +2749,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: Stage2/TearLeft
+    path: TearLeft
     classID: 212
     script: {fileID: 0}
     flags: 0

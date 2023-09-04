@@ -61,7 +61,7 @@ public class Health : MonoBehaviour, IObservable{
 
     void OnTriggerEnter2D(Collider2D other) {
         Enemy enemy = other.gameObject.GetComponent<Enemy>();
-        if (enemy != null){
+        if (enemy != null && health > 0){
             takeDamage();
         }
     }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3041684092959910943}
   - component: {fileID: 6934734715909502080}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,11 +96,12 @@ GameObject:
   - component: {fileID: 7580416704914424450}
   - component: {fileID: 295457228332754415}
   - component: {fileID: 6069876157417900195}
-  - component: {fileID: 7545587350477633619}
   - component: {fileID: 4515769653724725045}
   - component: {fileID: 4852628933478304917}
   - component: {fileID: 1831056820295210485}
-  m_Layer: 0
+  - component: {fileID: 8960731269172245734}
+  - component: {fileID: 4763375775933212981}
+  m_Layer: 9
   m_Name: Carrot
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -200,28 +201,6 @@ MonoBehaviour:
   speed: 1
   playerBodyOffset: 0.8
   stop: 0
---- !u!114 &7545587350477633619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4257136050955396212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c843c623a85f2e42967ba422bbae7dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
-  bossManager: {fileID: 0}
-  spriteObject: {fileID: 763825197958329946}
-  flashTime: 0.1
-  flashIntensity: 0.1
-  collider: {fileID: 295457228332754415}
-  deathSound: {fileID: 8300000, guid: 6f8863b9949274e45825d66ea90d2e00, type: 3}
-  OnEnemyDeath:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!95 &4515769653724725045
 Animator:
   serializedVersion: 5
@@ -252,9 +231,9 @@ AudioSource:
   m_GameObject: {fileID: 4257136050955396212}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5167511626879561636, guid: 57392151afda72d449c1af6fc2770462, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -351,3 +330,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98907947aee78f34db4c48f66de8bbc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8960731269172245734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4257136050955396212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e407d91dd91c04db54e4c81d22f9cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathSound: {fileID: 8300000, guid: 6f8863b9949274e45825d66ea90d2e00, type: 3}
+--- !u!114 &4763375775933212981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4257136050955396212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c843c623a85f2e42967ba422bbae7dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
+  bossManager: {fileID: 0}
+  spriteObject: {fileID: 763825197958329946}
+  flashTime: 0.1
+  flashIntensity: 0.1
+  collider: {fileID: 295457228332754415}
+  deathSound: {fileID: 8300000, guid: 6f8863b9949274e45825d66ea90d2e00, type: 3}
+  OnEnemyDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8960731269172245734}
+        m_TargetAssemblyTypeName: Carrot, Assembly-CSharp
+        m_MethodName: DestroyCarrot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  boosDeathEffect: {fileID: 0}
