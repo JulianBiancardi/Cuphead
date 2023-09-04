@@ -450,7 +450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collider2D: {fileID: 6585347189514764770}
   health: 3
-  invulnerabilityTime: 6
+  invulnerabilityTime: 2
   uiObserver: {fileID: 2667269396316026015}
   damageSound: {fileID: 8300000, guid: 4a53b3ec81651d14689d43816f7b7f14, type: 3}
   deathSound: {fileID: 8300000, guid: 0240a0431a778c34bbdcb187370763db, type: 3}

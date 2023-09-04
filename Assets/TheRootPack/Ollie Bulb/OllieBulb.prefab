@@ -21,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6913395725283356142
 Transform:
   m_ObjectHideFlags: 0
@@ -88,7 +88,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.022746563, y: -1.3052137}
+  m_Offset: {x: 0.022746563, y: -0.60617495}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -99,7 +99,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.844532, y: 6.197985}
+  m_Size: {x: 4.844532, y: 4.799907}
   m_EdgeRadius: 0
 --- !u!114 &3496774089407400740
 MonoBehaviour:
@@ -149,7 +149,7 @@ AudioSource:
   m_GameObject: {fileID: 1717247580561891924}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5167511626879561636, guid: 57392151afda72d449c1af6fc2770462, type: 2}
   m_audioClip: {fileID: 8300000, guid: 22bcc0b452ba93649979dde2b59e188e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -257,7 +257,19 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: b18541b03592b954494926e56295310f, type: 3}
   OnEnemyDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: NextBoss
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OllieBulbDeath
+          m_BoolArgument: 0
+        m_CallState: 2
   boosDeathEffect: {fileID: 0}
 --- !u!1 &2004944989349195302
 GameObject:

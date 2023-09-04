@@ -70,7 +70,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void PlayerDeath(){
-        AudioManager.Instance?.Loss();
+        AudioManager.Instance.Loss();
         Announcer.Instance.Loss();
         StopCarrots();
         StartCoroutine(RestartLevel());
