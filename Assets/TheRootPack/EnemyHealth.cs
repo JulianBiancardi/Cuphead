@@ -6,6 +6,8 @@ using UnityEngine.Events;
 public class EnemyHealth : MonoBehaviour
 {
     public int health = 10;
+    private int currentHealth = 0;
+    private int damageTaken = 0;
     public GameObject bossManager = null;
     public GameObject spriteObject;
     public float flashTime = 0.1f;
@@ -22,12 +24,23 @@ public class EnemyHealth : MonoBehaviour
         spriteRenderer = spriteObject.GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        currentHealth = health;
+    }
+
+    public float GetHealth(){
+        return health;
+    }
+
+    public float GetDamageTaken(){
+        return damageTaken;
     }
 
     public void TakeDamage(int amount){
-        health -= amount;
+        currentHealth -= amount;
+        damageTaken += amount;
         StartCoroutine(FlashWhite());
-        if(health <= 0){
+        if(currentHealth <= 0){
+            damageTaken = health;
             collider.enabled = false;
             animator.SetTrigger("isDead");
             if(audioSource != null){

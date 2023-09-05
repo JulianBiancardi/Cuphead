@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f7a9cd440980942b45588c01a7ef0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 4
 --- !u!114 &1213998452971066423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b83bd530c1aba4dbdecf0d447c2409, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  lifeTime: 3
+  damage: 1
+  isEXBullet: 0
 --- !u!82 &-4032198281111416656
 AudioSource:
   m_ObjectHideFlags: 0
@@ -217,7 +217,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020438932524477005}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 73576f240af83ca469bca6064539f03a, type: 3}

@@ -399,12 +399,12 @@ TextureImporter:
       name: MindControlAttack_13
       rect:
         serializedVersion: 2
-        x: 1392
-        y: 16
-        width: 457
-        height: 521
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1508
+        y: 451
+        width: 105
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,12 +420,12 @@ TextureImporter:
       name: MindControlAttack_14
       rect:
         serializedVersion: 2
-        x: 1856
-        y: 16
-        width: 457
-        height: 521
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1621
+        y: 443
+        width: 101
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,12 +441,12 @@ TextureImporter:
       name: MindControlAttack_15
       rect:
         serializedVersion: 2
-        x: 2320
-        y: 16
-        width: 457
-        height: 521
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1787
+        y: 443
+        width: 104
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -454,90 +454,6 @@ TextureImporter:
       bones: []
       spriteID: 3ad626db4e3f27b48bd387785f526234
       internalID: 205202822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MindControlAttack_16
-      rect:
-        serializedVersion: 2
-        x: 2784
-        y: 16
-        width: 457
-        height: 521
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3ed700f5e6a35c42add24ff58d0a9b9
-      internalID: -1271934096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MindControlAttack_17
-      rect:
-        serializedVersion: 2
-        x: 3248
-        y: 16
-        width: 457
-        height: 521
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87538802f1df0be4e92f24bd669527f3
-      internalID: -51239833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MindControlAttack_18
-      rect:
-        serializedVersion: 2
-        x: 3712
-        y: 16
-        width: 457
-        height: 521
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 172232ee88b1ff34b8ea82e19c7e528b
-      internalID: -58469829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MindControlAttack_19
-      rect:
-        serializedVersion: 2
-        x: 4176
-        y: 16
-        width: 457
-        height: 521
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc8f03f237927d1418f9835820a08988
-      internalID: 358658047
       vertices: []
       indices: 
       edges: []

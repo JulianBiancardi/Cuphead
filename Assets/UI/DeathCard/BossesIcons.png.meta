@@ -1,0 +1,1862 @@
+fileFormatVersion: 2
+guid: 87959d17d1fad1a4eb925cf1319b4db7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossesIcons_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3361
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf65d2c842c146143b95f6e9ebf090c5
+      internalID: 1242179522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 3361
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420acc785dcb2f945a5b827cac13c249
+      internalID: -464023870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_2
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 3361
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62e42a2bf07b7e489cd9972c4b14203
+      internalID: 661398315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_3
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 3361
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e03e15c0ac7a041b165adf03823349
+      internalID: 723487265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_4
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 3361
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de164f630ae7d44e924df7916875fcd
+      internalID: 666024305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_5
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 3361
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746de4a972ad8c64daa3a55232ef2dd8
+      internalID: 1724823694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_6
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 3361
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9c225ef98a37f4da0ea7fcf06b0b28
+      internalID: -500630349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3056
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6e9d9b246e42849b89fc95a79e18e4
+      internalID: 1477570797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_8
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 3056
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2b90c2ff9979247b3824b97075e70a
+      internalID: 17980790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_9
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 3056
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db47dbcc9ed9e5b4ca8bbef81b96759a
+      internalID: 155867229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_10
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 3056
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f000912dc3353e94f9ba9a6cfb328bf0
+      internalID: 186236355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_11
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 3056
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498b51038d5d23a4a8ab63c6189e0991
+      internalID: -666247313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_12
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 3056
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ebad9cf62f22145821634cfe697cce
+      internalID: -667999561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_13
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 3056
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659e7aabb2a18dd4782f4f63db98b9e6
+      internalID: 381112771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_14
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2751
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf993667e14fc44a863c4a20436e050
+      internalID: 1736128165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_15
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 2751
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe5e721ca4d48e42b036ffc889ca8bd
+      internalID: 807107832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_16
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 2751
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98d0ed568833074a8188b1629b6315e
+      internalID: 1840237658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_17
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 2751
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c000a44e7866e4c88608779a19591b
+      internalID: -1650769529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_18
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 2751
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0826ec37291b1744a59fa6e5fd9c112
+      internalID: 963942132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_19
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 2751
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c68975a75610d48984933b6ba21f35
+      internalID: 1594151047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_20
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 2751
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd23988056c2d643b3fd8154828131a
+      internalID: 1489284892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2446
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f0954df3906234fb16be92a4961edc
+      internalID: 1317133404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_22
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 2446
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27369089cc8801144a50b133ac1b38d0
+      internalID: 1761246760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_23
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 2446
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492d22664441bfb4081212ccb36b22ab
+      internalID: 1178717819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_24
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 2446
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19dea6dd47ca1e74cbb0e24aceb23bf8
+      internalID: -1843000839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_25
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 2446
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8211f85c9d7e74f985a703df51c023
+      internalID: -1066510071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_26
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 2446
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d71c857b5af19746be2214a92537a06
+      internalID: -1618102031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_28
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2141
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c88edd4b748f6f4fbd0ebd5f515a9dd
+      internalID: 1475325544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_29
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 2141
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b95af16a43cc454399ee8da580a4afa
+      internalID: 136614834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_30
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 2141
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38123437fb43e44fbbb95f61aae07e6
+      internalID: -1576457910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_31
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 2141
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b49e9495de4664e83de3884f73fbc4
+      internalID: -931550176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_32
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 2141
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365c1f796ba7aaa4bafea5ea1108c24a
+      internalID: -2053047985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_33
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 2141
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d23c619505db7a449b60231ade949e7
+      internalID: 1383987099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_34
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 2141
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea42ef8d20407546895b7e003d5fef1
+      internalID: 600766398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_35
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1836
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29258687484def54eb063af1ad6976de
+      internalID: -550473902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_36
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1836
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fdb4b271b9a164d8281b47bd90cc8d
+      internalID: -1133626179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_37
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1836
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e33f8d269cc34449ad596e87082060
+      internalID: -1579944304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_38
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1836
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650f620bbcf1f2e41b3691677175df0a
+      internalID: 1984859447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_39
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1836
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1db3c0716ba094b94a6940f5b098c9
+      internalID: 1102043965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_40
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 1836
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a902b2b0e4bdb24fb212539f4b7a754
+      internalID: -1628384454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_41
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 1836
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f45e804038a9e3468e81f12b020d4cf
+      internalID: -1092437230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_42
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1531
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2420bf10f538c7b44adf94b3ab4822d4
+      internalID: 757782299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_43
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1531
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a80d041426ac54ab143db503993719
+      internalID: 649664802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_44
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1531
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e0e372d491aca4eaba9f062c67a185
+      internalID: 1351272336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_45
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1531
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5753029f8080df84aaeb5fe1aaf7a5d4
+      internalID: -1474083351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_46
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1531
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02acc5dfce621e45b83f7cd08f5364e
+      internalID: -1846812431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_47
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 1531
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c5c6a1d256aa345bf894a9d4a4108f
+      internalID: 1098208561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_48
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 1531
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad0863ec4a91644b844f5da78ec8731
+      internalID: 1740834373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_49
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1226
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbb277f556db094aa07e532439c39f5
+      internalID: -888520977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_50
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1226
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd8e790b0c89de4cbf40dddba36fb76
+      internalID: 648081481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_51
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1226
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa78f4c947eefd749aa1e97e7ccb72bb
+      internalID: -513126179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_52
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1226
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643d39cf0de149b498d611f440bb168a
+      internalID: -1770869113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_53
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1226
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f52c3510c33f9945813398d2a79cdb7
+      internalID: 1712028916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_54
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 1226
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d3ce3d18f9b3b47bebc6ab57b0c314
+      internalID: -516921735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_55
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 1226
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d83c63b0e88ac4b8ed0782b457a6dd
+      internalID: 2102578523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_56
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 921
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79e7e8265e5266419dfc3a03faaf928
+      internalID: -1725556962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_57
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 921
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7231eb33c0fab724abf7f6bb24537ddd
+      internalID: 1177247679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_58
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 921
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468017bd5917df24daf29b2fcee5255d
+      internalID: 569724876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_59
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 921
+        width: 292
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98977685871b8b74c8fa5f2ed36cac57
+      internalID: -1115016996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_60
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 921
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02daa64145ee1744fb6a68820cfc25d3
+      internalID: -1624374177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_61
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 921
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e53b7a2b1075504da7ada4868a2e187
+      internalID: -2056730193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_62
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 921
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fac8b2540df2894c8f132189b4e7027
+      internalID: -691244917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 616
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750489388db79194f9dd0a820ada7e63
+      internalID: -1421136312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_64
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 616
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98865f10f84973a4e9f59d4c1b787413
+      internalID: 21655437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_65
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 616
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6827832ba77b9469e36273259eca12
+      internalID: -465690074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_66
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 616
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8471abeccb4224095559b065a626df
+      internalID: 469997439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_67
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 616
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6342bdf004d4ca141952b780a5c0edd5
+      internalID: -1232264495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_68
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 616
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163586c7caa78ea49bf54b3d5546b86a
+      internalID: 134703921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_69
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 616
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf88f30e6ab4614196b530583fb25d0
+      internalID: 1069586813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_70
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 311
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2356f73835327c841a01091258705d5a
+      internalID: 2082458449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_71
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 311
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9800d8d4f9f7cf444ada2d078d17f997
+      internalID: -1999019690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_72
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 311
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5735ec6d2c07f474e80146505cee353e
+      internalID: 487779584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_73
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 311
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db473c479ca93743ba6b13eaf72d875
+      internalID: 767573639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_74
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 311
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894e1afa9f2400947ac4c68f556f061d
+      internalID: -509814985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_75
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 311
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def8d45fdc77c444fafafbac4a8d0027
+      internalID: -2116940741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_76
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 311
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf1fb6347a4c5f44bafa023b7a0ced3
+      internalID: 1154746216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_77
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43311fdf104913447a0c1f3fa36580b4
+      internalID: 810302644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossesIcons_78
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 6
+        width: 298
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b872b09f6ac8842937a3b766f38a82
+      internalID: -1129625430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BossesIcons_0: 1242179522
+      BossesIcons_1: -464023870
+      BossesIcons_10: 186236355
+      BossesIcons_11: -666247313
+      BossesIcons_12: -667999561
+      BossesIcons_13: 381112771
+      BossesIcons_14: 1736128165
+      BossesIcons_15: 807107832
+      BossesIcons_16: 1840237658
+      BossesIcons_17: -1650769529
+      BossesIcons_18: 963942132
+      BossesIcons_19: 1594151047
+      BossesIcons_2: 661398315
+      BossesIcons_20: 1489284892
+      BossesIcons_21: 1317133404
+      BossesIcons_22: 1761246760
+      BossesIcons_23: 1178717819
+      BossesIcons_24: -1843000839
+      BossesIcons_25: -1066510071
+      BossesIcons_26: -1618102031
+      BossesIcons_27: -588317619
+      BossesIcons_28: 1475325544
+      BossesIcons_29: 136614834
+      BossesIcons_3: 723487265
+      BossesIcons_30: -1576457910
+      BossesIcons_31: -931550176
+      BossesIcons_32: -2053047985
+      BossesIcons_33: 1383987099
+      BossesIcons_34: 600766398
+      BossesIcons_35: -550473902
+      BossesIcons_36: -1133626179
+      BossesIcons_37: -1579944304
+      BossesIcons_38: 1984859447
+      BossesIcons_39: 1102043965
+      BossesIcons_4: 666024305
+      BossesIcons_40: -1628384454
+      BossesIcons_41: -1092437230
+      BossesIcons_42: 757782299
+      BossesIcons_43: 649664802
+      BossesIcons_44: 1351272336
+      BossesIcons_45: -1474083351
+      BossesIcons_46: -1846812431
+      BossesIcons_47: 1098208561
+      BossesIcons_48: 1740834373
+      BossesIcons_49: -888520977
+      BossesIcons_5: 1724823694
+      BossesIcons_50: 648081481
+      BossesIcons_51: -513126179
+      BossesIcons_52: -1770869113
+      BossesIcons_53: 1712028916
+      BossesIcons_54: -516921735
+      BossesIcons_55: 2102578523
+      BossesIcons_56: -1725556962
+      BossesIcons_57: 1177247679
+      BossesIcons_58: 569724876
+      BossesIcons_59: -1115016996
+      BossesIcons_6: -500630349
+      BossesIcons_60: -1624374177
+      BossesIcons_61: -2056730193
+      BossesIcons_62: -691244917
+      BossesIcons_63: -1421136312
+      BossesIcons_64: 21655437
+      BossesIcons_65: -465690074
+      BossesIcons_66: 469997439
+      BossesIcons_67: -1232264495
+      BossesIcons_68: 134703921
+      BossesIcons_69: 1069586813
+      BossesIcons_7: 1477570797
+      BossesIcons_70: 2082458449
+      BossesIcons_71: -1999019690
+      BossesIcons_72: 487779584
+      BossesIcons_73: 767573639
+      BossesIcons_74: -509814985
+      BossesIcons_75: -2116940741
+      BossesIcons_76: 1154746216
+      BossesIcons_77: 810302644
+      BossesIcons_78: -1129625430
+      BossesIcons_79: 1036332026
+      BossesIcons_8: 17980790
+      BossesIcons_80: 555228433
+      BossesIcons_81: 1631692796
+      BossesIcons_82: 1693904470
+      BossesIcons_83: 1058031987
+      BossesIcons_9: 155867229
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

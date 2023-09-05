@@ -12,6 +12,7 @@ public class Announcer : MonoBehaviour
     public AudioClip[] goSounds;
     public AudioClip knockOutSound;
     public AudioClip knockOutBellSound;
+    public GameObject deathCard;
 
     private void Awake()
     {
@@ -50,5 +51,10 @@ public class Announcer : MonoBehaviour
 
     public void Loss(){
         animator.SetTrigger("loss");
+    }
+
+    public void OnLossAnimEnd(){
+        deathCard.SetActive(true);
+        deathCard.GetComponent<DeathCard>().StartAnim();
     }
 }
