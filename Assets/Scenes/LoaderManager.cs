@@ -34,7 +34,7 @@ public class LoaderManager : MonoBehaviour
     }
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.Space) && currentScene == Scene.Title && !isLoading){
+        if(Input.anyKey && currentScene == Scene.Title && !isLoading){
            LoadSceneAsync(Scene.TheRootPack);
         }
     }
