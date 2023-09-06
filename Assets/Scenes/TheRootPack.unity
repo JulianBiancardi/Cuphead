@@ -734,7 +734,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4601235233026938373, guid: d6717b0949b60f94bb820e7a33d019f8, type: 3}
       propertyPath: health
-      value: 360
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: -4601235233026938373, guid: d6717b0949b60f94bb820e7a33d019f8, type: 3}
       propertyPath: bossManager
@@ -1591,7 +1591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3351732891139018265, guid: cab6addafa0a75d4fa7533223e1cb65c, type: 3}
       propertyPath: health
-      value: 400
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3351732891139018265, guid: cab6addafa0a75d4fa7533223e1cb65c, type: 3}
       propertyPath: bossManager
@@ -1950,9 +1950,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChaunceyChanteny
       objectReference: {fileID: 0}
+    - target: {fileID: 7830920104328678115, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
       propertyPath: health
-      value: 475
+      value: 275
       objectReference: {fileID: 0}
     - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
       propertyPath: bossManager

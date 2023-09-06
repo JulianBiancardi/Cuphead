@@ -16,6 +16,7 @@ public class LoaderManager : MonoBehaviour
     public enum Scene
     {
         Title,
+        MainMenu,
         Tutorial,
         Loading,
         Win,
@@ -35,7 +36,7 @@ public class LoaderManager : MonoBehaviour
 
     void Update() {
         if(Input.anyKey && currentScene == Scene.Title && !isLoading){
-           LoadSceneAsync(Scene.TheRootPack);
+           LoadSceneAsync(Scene.MainMenu);
         }
     }
 
@@ -69,7 +70,7 @@ public class LoaderManager : MonoBehaviour
     }
 
     IEnumerator FinishLoadingLevel(){
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(nextScene.ToString()));
         currentScene = nextScene;
         isLoading = false;

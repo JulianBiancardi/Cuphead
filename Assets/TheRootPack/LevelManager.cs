@@ -91,7 +91,6 @@ public class LevelManager : MonoBehaviour
         } else {
             damageDeal += chaunceyChanteny.GetComponent<EnemyHealth>().GetDamageTaken();
         }
-        Debug.Log("Damage deal: " + damageDeal + " Total health: " + totalHealth + " Percentage: " + damageDeal / totalHealth);
         deathCard.GetComponent<DeathCard>().SetBossDeathCard(currentBossDeathCard, damageDeal / totalHealth);
         Announcer.Instance.Loss();
         StopCarrots();
