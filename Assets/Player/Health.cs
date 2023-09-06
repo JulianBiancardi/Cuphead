@@ -3,48 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Health : MonoBehaviour, IObservable{
+public class Health : MonoBehaviour{
     public Collider2D collider2D;
     private AudioSource audioSource;
     private Animator animator;
-    
-    [SerializeField]
-    public List<IObserver> healtObservers = new List<IObserver>();
 
     public int health = 3;
     public float invulnerabilityTime = 6f;
-    public GameObject uiObserver;
     public AudioClip damageSound;
     public AudioClip deathSound;
 
+    public UnityEvent<int> OnPlayerHealthChange = new UnityEvent<int>();
     public UnityEvent OnPlayerDeath = new UnityEvent(); 
 
     public int getHealth(){
         return health;
     }
 
-    public void addObserver(IObserver observer){
-        healtObservers.Add(observer);
-    }
-
-    public void removeObserver(IObserver observer){
-    }
-
-    public void notifyObservers(IObservable context){
-        foreach (IObserver observer in healtObservers){
-            observer.update(context);
-        }
-    }
-
     private void Start() {
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
-        addObserver(uiObserver.GetComponent<IObserver>());
-        notifyObservers(this);
+        OnPlayerHealthChange.Invoke(health);
     }
 
     public void takeDamage(){
         health -= 1;
+        OnPlayerHealthChange.Invoke(health);
         audioSource.PlayOneShot(damageSound);
         animator.SetTrigger("hit");
         CameraShake.Instance.ShakeCamera(1f, 0.2f);
@@ -54,7 +38,6 @@ public class Health : MonoBehaviour, IObservable{
             audioSource.PlayOneShot(deathSound);
             OnPlayerDeath.Invoke();
         } else {
-            notifyObservers(this);
             Invulnerability();
         }
     }

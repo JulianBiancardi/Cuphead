@@ -6,13 +6,23 @@ public class TutorialLevelManager : MonoBehaviour
 {
     public GameObject player;
     public AudioClip levelMusic;
+    private AudioSource audioSource;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Init(){
         player.GetComponent<PlayerStateManager>().Init();
-        AudioManager.Instance.PlayMusic(levelMusic, true);
+        audioSource.clip = levelMusic;
+        audioSource.Play();
+    }
+
+    public void FinishTutorial(){
+        LoaderManager loaderManager = GameObject.Find("LoaderManager").GetComponent<LoaderManager>();
+        if(loaderManager){
+            loaderManager.LoadSceneAsync(LoaderManager.Scene.MainMenu);
+        }
     }
 }

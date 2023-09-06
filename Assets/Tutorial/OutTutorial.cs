@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class DoorOutTutorial : MonoBehaviour
 {
+    public UnityEvent OnPlayerEnter = new UnityEvent();
     private Collider2D collider;
 
     void Start()
@@ -14,12 +16,7 @@ public class DoorOutTutorial : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.CompareTag("Player")){
-            LoaderManager loaderManager = GameObject.Find("LoaderManager").GetComponent<LoaderManager>();
-            if(loaderManager){
-                collider.enabled = false;
-                loaderManager.LoadSceneAsync(LoaderManager.Scene.TheRootPack);
-            }
+            OnPlayerEnter.Invoke();
         }
-
     }
 }

@@ -346,6 +346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugMode: 0
   player: {fileID: 5132865304233704772}
+  UI: {fileID: 1221588898}
   lossSound: {fileID: 8300000, guid: 0240a0431a778c34bbdcb187370763db, type: 3}
   levelMusic: {fileID: 8300000, guid: 1482d212e3fcaa2478ca9c000bfe3911, type: 3}
   salSpudder: {fileID: 793091210}
@@ -734,7 +735,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4601235233026938373, guid: d6717b0949b60f94bb820e7a33d019f8, type: 3}
       propertyPath: health
-      value: 160
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: -4601235233026938373, guid: d6717b0949b60f94bb820e7a33d019f8, type: 3}
       propertyPath: bossManager
@@ -973,7 +974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221588899}
   m_Layer: 0
-  m_Name: TEST
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1591,7 +1592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3351732891139018265, guid: cab6addafa0a75d4fa7533223e1cb65c, type: 3}
       propertyPath: health
-      value: 200
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3351732891139018265, guid: cab6addafa0a75d4fa7533223e1cb65c, type: 3}
       propertyPath: bossManager
@@ -1811,18 +1812,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8504358637492877574, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8654558203260472869, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
-      propertyPath: uiObserver
-      value: 
-      objectReference: {fileID: 91637669}
     - target: {fileID: 8654558203260472869, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
       propertyPath: OnPlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 455872589}
+    - target: {fileID: 8654558203260472869, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
+      propertyPath: OnPlayerHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 91637671}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1956,7 +1953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
       propertyPath: health
-      value: 275
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 8153857228118095722, guid: 0ce9ca56fa72190418b3096ef8b536c5, type: 3}
       propertyPath: bossManager

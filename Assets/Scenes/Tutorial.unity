@@ -1459,7 +1459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2546022921301695265, guid: 584b3155ba2cda24e99c82b5b2dcfe4f, type: 3}
       propertyPath: m_Text
-      value: HOLD FOR RAPID FREE.
+      value: "HOLD \u2192 FOR RAPID FREE."
       objectReference: {fileID: 0}
     - target: {fileID: 2546022921301695265, guid: 584b3155ba2cda24e99c82b5b2dcfe4f, type: 3}
       propertyPath: m_FontSize
@@ -1712,7 +1712,7 @@ Transform:
   m_GameObject: {fileID: 715685817}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6633339, y: -0.0010008812, z: -10}
+  m_LocalPosition: {x: 0.013333797, y: -0.0010008812, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2558,6 +2558,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59aef4007faa2134886004ccd2fc6446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnPlayerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1909166996}
+        m_TargetAssemblyTypeName: TutorialLevelManager, Assembly-CSharp
+        m_MethodName: FinishTutorial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1120526015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2728,7 +2743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2546022921301695265, guid: 584b3155ba2cda24e99c82b5b2dcfe4f, type: 3}
       propertyPath: m_Text
-      value: 'QUICK EVADE ON
+      value: 'SHIFT TO QUICK EVADE ON
 
         GROUND OR AIR.'
       objectReference: {fileID: 0}
@@ -2947,7 +2962,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179767655}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &1179767659
 Camera:
   m_ObjectHideFlags: 0
@@ -3008,7 +3023,7 @@ Transform:
   m_GameObject: {fileID: 1179767655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6633339, y: -0.0010008812, z: -10}
+  m_LocalPosition: {x: 0.013333778, y: -0.0010008812, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4152,9 +4167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2546022921301695265, guid: 584b3155ba2cda24e99c82b5b2dcfe4f, type: 3}
       propertyPath: m_Text
-      value: 'DROP DOWN FROM
-
-        CERTAIN PLATFORMS.'
+      value: "\tS + SPACE\nDROP DOWN FROM\nCERTAIN PLATFORMS."
       objectReference: {fileID: 0}
     - target: {fileID: 2546022921301695265, guid: 584b3155ba2cda24e99c82b5b2dcfe4f, type: 3}
       propertyPath: m_FontSize
@@ -4760,7 +4773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6437662396862363995, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.95
+      value: -6.6
       objectReference: {fileID: 0}
     - target: {fileID: 6437662396862363995, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4796,6 +4809,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6437662396862363995, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504358637492877574, guid: aba485b5b7f80e640a4a8c04d7ada96b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4957,6 +4974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1909166997}
   - component: {fileID: 1909166996}
+  - component: {fileID: 1909166998}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -4993,6 +5011,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1909166998
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909166995}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 2113291818229516506, guid: 57392151afda72d449c1af6fc2770462, type: 2}
+  m_audioClip: {fileID: 8300000, guid: bfd85e7768f7d3b4685455863353aaed, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1909256311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5782,7 +5896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2546022921301695265, guid: 584b3155ba2cda24e99c82b5b2dcfe4f, type: 3}
       propertyPath: m_Text
-      value: HOLD DOWN TO CROUCH.
+      value: HOLD S TO CROUCH.
       objectReference: {fileID: 0}
     - target: {fileID: 2546022921301695265, guid: 584b3155ba2cda24e99c82b5b2dcfe4f, type: 3}
       propertyPath: m_FontSize

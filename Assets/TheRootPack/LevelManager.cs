@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
 {
     public bool debugMode = false; 
     public GameObject player;
+    public GameObject UI;
     public AudioClip lossSound;
     public AudioClip levelMusic;
     public GameObject salSpudder;
@@ -28,6 +29,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        UI.SetActive(false);
         salSpudder.SetActive(false);
         ollieBulb.SetActive(false);
         chaunceyChanteny.SetActive(false);
@@ -42,6 +44,7 @@ public class LevelManager : MonoBehaviour
 
     public void Init(){
         player.GetComponent<PlayerStateManager>().Init();
+        UI.SetActive(true);
         salSpudder.SetActive(true);
         currentPhase = Phase.SalSpudder;
         currentBossDeathCard = bossDeathCards[0];

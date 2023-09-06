@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthUI : MonoBehaviour, IObserver{
+public class HealthUI : MonoBehaviour{
 
     private Image image;
 
@@ -18,14 +18,13 @@ public class HealthUI : MonoBehaviour, IObserver{
         image = GetComponent<Image>();
     }
 
-    public void update(IObservable context){
-        Health health = (Health) context;
-        if(health.getHealth() <= 0){
+    public void update(int health){
+        if(health <= 0){
             image.sprite = deathSprite;
             return;
         }
 
-        image.sprite = lifeSprites[health.getHealth() - 1];
+        image.sprite = lifeSprites[health - 1];
     }
 
 }
